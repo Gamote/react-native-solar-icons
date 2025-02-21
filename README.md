@@ -1,6 +1,8 @@
 # React Native Solar Icons
 
-## Preparing the project
+## Setup
+
+### Preparing the project
 - Initialize the project:
    ```bash
    yarn init -y
@@ -31,14 +33,14 @@
    yarn add -D typescript tsx @types/node
    ```
 
-## Original
+### Original
 1. Cloned everything from https://github.com/480-Design/Solar-Icon-Set/tree/main into `original/` folder.
 2. Sanitize the directory and file names.
    - Created a script in `scripts/rename-icons.ts`
    - Added a script in `package.json` to run the script: `"rename-icons": "tsx scripts/rename-icons.ts"`
    - Ran the script: `yarn rename-icons`
 
-## Converting SVGs to React components
+### Converting SVGs to React components
 
 - Installed `@svgr/cli` to convert SVGs to React components.
   ```bash
@@ -73,7 +75,7 @@
     original/icons/SVG
   ```
 
-## Creating the SolarIcon component and index files
+### Creating the SolarIcon component and index files
 - Created a script to generate index files for the icon categories, types and helpers in `scripts/generate-icons-index.ts`
 - Added a script in `package.json` to run the script: `"generate-icons-index": "tsx scripts/generate-icons-index.ts"`
 - Ran the script: `yarn generate-icons-index`
@@ -82,14 +84,26 @@
 
 - Created `src/index.ts` to export the `SolarIcon` component.
 
-## Build
+### Build
 - Added a `tsconfig.json` file.
 - Added a script in `package.json` to build the project: `"build": "tsc"`
 - Set the `main` and `types` fields in `package.json` to point to the built files.
 - Add the `peerDependencies` field in `package.json` to list the required dependencies.
 - Ran the build script: `yarn build`
 
-## Test
+### Test
 - Add a `testpack` command in `package.json` to pack the project: `"testpack": "yarn pack --filename react-native-solar-icons-latest.tgz"`
 - Ran the test script: `yarn testpack`
 - Install the package in a test project: `yarn add file:/absolute/path/to/react-native-solar-icons-v1.0.0.tgz`
+
+
+## Known issues
+
+Wrong autocomplete when the icon is not part of the type.
+Example: The `HandShake` is part only o the `bold` and `linear` types. If we try to use it like so:
+```tsx
+<SolarIcon type={"bold-duotone"} name={"HandShake"} />
+```
+it will throw a Typescript error.
+
+**The issue is** that if we type in `HandSh` it will autocomplete to `HandShake` even if it's not part of the type. This is a limitation of the current implementation. We could improve this by using a different approach to generate the index files.
