@@ -5,11 +5,19 @@
   "author": "Gamote <contact@gamote.ro>",
   "license": "MIT",
   "scripts": {
-    "rename-icons": "tsx scripts/rename-icons.ts"
+    "rename-icons": "tsx scripts/rename-icons.ts",
+    "generate-icons-index": "tsx scripts/generate-icons-index.ts"
   },
   "devDependencies": {
+    "@svgr/cli": "^8.1.0",
     "@types/node": "^22.13.4",
-    "tsx": "^4.19.3"
+    "@types/react": "^19.0.10",
+    "@types/react-native": "^0.73.0",
+    "react": "^19.0.0",
+    "react-native": "^0.78.0",
+    "react-native-svg": "^15.11.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
   },
   "packageManager": "yarn@4.6.0"
 }
