@@ -75,3 +75,8 @@
 - Set the `main` and `types` fields in `package.json` to point to the built files.
 - Add the `peerDependencies` field in `package.json` to list the required dependencies.
 - Ran the build script: `yarn build`
+
+## Test
+- Add a `testpack` command in `package.json` to pack the project: `"testpack": "yarn pack --filename react-native-solar-icons-latest.tgz"`
+- Ran the test script: `yarn testpack`
+- Install the package in a test project: `yarn add file:/absolute/path/to/react-native-solar-icons-v1.0.0.tgz`

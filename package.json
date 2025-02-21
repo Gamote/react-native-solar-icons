@@ -1,14 +1,18 @@
 {
   "name": "react-native-solar-icons",
   "version": "1.0.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "author": "Gamote <contact@gamote.ro>",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "rename-icons": "tsx scripts/rename-icons.ts",
     "generate-icons-index": "tsx scripts/generate-icons-index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "testpack": "yarn pack --filename react-native-solar-icons-latest.tgz"
   },
   "peerDependencies": {
     "react": "^18 || ^19",
