@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   getIconComponent,
   IconTypes,
@@ -6,14 +7,13 @@ import {
   IconComponentType,
 } from './icons';
 
-export interface SolarIconProps<T extends IconType = IconType> extends React.ComponentPropsWithoutRef<IconComponentType> {
+export interface SolarIconProps<T extends IconType = typeof IconTypes.Bold> extends React.ComponentPropsWithoutRef<IconComponentType> {
   /**
-   * The icon set type. For example, use `IconTypes.Bold` for the Bold icon set.
+   * The icon set type. Defaults to IconTypes.Bold.
    */
-  type: T;
+  type?: T;
   /**
-   * The icon name. For example, "ArrowDown".
-   * Auto-completion will only show valid names for the selected type.
+   * The icon name, e.g. "ArrowDown". Auto-completion will only show valid names for the selected type.
    */
   name: IconNameByType[T];
   /**
@@ -21,7 +21,7 @@ export interface SolarIconProps<T extends IconType = IconType> extends React.Com
    */
   size?: number;
   /**
-   * Icon color (applied as the SVG fill). Defaults to '#000'.
+   * Icon color, applied as the SVG fill. Defaults to '#000'.
    */
   color?: string;
 }
@@ -33,10 +33,11 @@ export const SolarIcon = <T extends IconType>({
                                                 color = '#000',
                                                 ...props
                                               }: SolarIconProps<T>) => {
-  const IconComponent = getIconComponent(type, name);
+  const IconComponent = getIconComponent(type || IconTypes.Bold, name);
   if (!IconComponent) {
     console.warn(`Icon "${name}" not found in "${type}" set.`);
     return null;
   }
+  // Pass the fill as color. (This works properly only if the SVG uses currentColor.)
   return <IconComponent width={size} height={size} fill={color} {...props} />;
 };
