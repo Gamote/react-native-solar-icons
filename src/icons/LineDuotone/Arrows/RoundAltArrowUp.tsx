@@ -8,12 +8,12 @@ const SvgRoundAltArrowUp = (props: SvgProps) => (
       cx={12}
       cy={12}
       r={10}
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
     <Path
       d="M15 13.5L12 10.5L9 13.5"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

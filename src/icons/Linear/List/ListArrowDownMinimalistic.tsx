@@ -5,25 +5,25 @@ const SvgListArrowDownMinimalistic = (props: SvgProps) => (
   <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
       d="M20 6L3 6"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       d="M11 16L3 16"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       d="M12 11L3 11"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       d="M15 14.5L17.5 17M17.5 17L20 14.5M17.5 17V9"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

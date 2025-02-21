@@ -17,7 +17,7 @@ const SvgUfo = (props: SvgProps) => (
     />
     <Path
       d="M17 8.21094C19.989 8.93258 22 10.2814 22 11.8262C22 14.1313 17.5228 15.9999 12 15.9999C6.47715 15.9999 2 14.1313 2 11.8262C2 10.2814 4.01099 8.93258 7 8.21094"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
     <Path
@@ -27,13 +27,13 @@ const SvgUfo = (props: SvgProps) => (
     />
     <Path
       d="M12 16V19"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Circle cx={12} cy={13} r={1} fill="#8E93A6" />
-    <Circle cx={7} cy={12} r={1} fill="black" />
-    <Circle cx={17} cy={12} r={1} fill="black" />
+    <Circle cx={7} cy={12} r={1} fill={props.primaryColor} />
+    <Circle cx={17} cy={12} r={1} fill={props.primaryColor} />
   </Svg>
 );
 export default SvgUfo;

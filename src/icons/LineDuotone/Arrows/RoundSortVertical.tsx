@@ -8,19 +8,19 @@ const SvgRoundSortVertical = (props: SvgProps) => (
       cx={12}
       cy={12}
       r={10}
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
     <Path
       d="M9.5 8L9.5 16M9.5 16L7 13.25M9.5 16L12 13.25"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <Path
       d="M14.5 16L14.5 8M14.5 8L12 10.75M14.5 8L17 10.75"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

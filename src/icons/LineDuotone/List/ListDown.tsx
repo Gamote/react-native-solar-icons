@@ -6,34 +6,34 @@ const SvgListDown = (props: SvgProps) => (
     <Path
       opacity={0.5}
       d="M21 6L3 6"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       opacity={0.5}
       d="M21 10L3 10"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       opacity={0.5}
       d="M10 14H3"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       opacity={0.5}
       d="M10 18H3"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       d="M14 15L17.5 18L21 15"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

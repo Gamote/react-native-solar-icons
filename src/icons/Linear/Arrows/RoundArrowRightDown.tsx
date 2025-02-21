@@ -3,10 +3,16 @@ import Svg, { Circle, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgRoundArrowRightDown = (props: SvgProps) => (
   <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
-    <Circle cx={12} cy={12} r={10} stroke="black" strokeWidth={1.5} />
+    <Circle
+      cx={12}
+      cy={12}
+      r={10}
+      stroke={props.primaryColor}
+      strokeWidth={1.5}
+    />
     <Path
       d="M9 9L15 15M15 15L15 10.5M15 15L10.5 15"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

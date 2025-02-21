@@ -8,11 +8,16 @@ const SvgDangerCircle = (props: SvgProps) => (
       cx={12}
       cy={12}
       r={10}
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
-    <Path d="M12 7V13" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
-    <Circle cx={12} cy={16} r={1} fill="black" />
+    <Path
+      d="M12 7V13"
+      stroke={props.primaryColor}
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Circle cx={12} cy={16} r={1} fill={props.primaryColor} />
   </Svg>
 );
 export default SvgDangerCircle;

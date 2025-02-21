@@ -8,19 +8,19 @@ const SvgRoundDoubleAltArrowLeft = (props: SvgProps) => (
       cx={12}
       cy={12}
       r={10}
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
     <Path
       d="M15.5 9L12.5 12L15.5 15"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <Path
       d="M11.5 9L8.5 12L11.5 15"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

@@ -8,12 +8,12 @@ const SvgRoundArrowRightDown = (props: SvgProps) => (
       cx={12}
       cy={12}
       r={10}
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
     <Path
       d="M9 9L15 15M15 15L15 10.5M15 15L10.5 15"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

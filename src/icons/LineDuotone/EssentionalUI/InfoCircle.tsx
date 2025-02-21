@@ -8,16 +8,16 @@ const SvgInfoCircle = (props: SvgProps) => (
       cx={12}
       cy={12}
       r={10}
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
     <Path
       d="M12 17V11"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
-    <Circle r={1} transform="matrix(1 0 0 -1 12 8)" fill="black" />
+    <Circle r={1} transform="matrix(1 0 0 -1 12 8)" fill={props.primaryColor} />
   </Svg>
 );
 export default SvgInfoCircle;

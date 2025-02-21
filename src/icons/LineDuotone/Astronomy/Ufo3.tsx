@@ -5,7 +5,7 @@ const SvgUfo3 = (props: SvgProps) => (
   <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
       d="M18.922 12.1491C20.5253 14.7729 20.9935 17.1486 19.9012 18.241C18.2713 19.8709 13.7841 18.0264 9.8789 14.1212C5.97365 10.2159 4.12913 5.72878 5.75904 4.09887C6.8514 3.00651 9.22714 3.47475 11.851 5.07801"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
     <Path
@@ -25,18 +25,18 @@ const SvgUfo3 = (props: SvgProps) => (
       cy={7.75748}
       r={1}
       transform="rotate(45 9.17163 7.75748)"
-      fill="black"
+      fill={props.primaryColor}
     />
     <Circle
       cx={16.2427}
       cy={14.8283}
       r={1}
       transform="rotate(45 16.2427 14.8283)"
-      fill="black"
+      fill={props.primaryColor}
     />
     <Path
       d="M3.636 20.364L7.75732 16.2427"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />

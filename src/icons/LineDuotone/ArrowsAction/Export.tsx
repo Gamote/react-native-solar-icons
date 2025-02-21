@@ -6,13 +6,13 @@ const SvgExport = (props: SvgProps) => (
     <Path
       opacity={0.5}
       d="M4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       d="M12 14L12 4M12 4L15 7M12 4L9 7"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

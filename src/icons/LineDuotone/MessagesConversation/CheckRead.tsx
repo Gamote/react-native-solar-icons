@@ -6,14 +6,14 @@ const SvgCheckRead = (props: SvgProps) => (
     <Path
       opacity={0.5}
       d="M4 12.9L7.14286 16.5L15 7.5"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <Path
       d="M20.0002 7.5625L11.4286 16.5625L11.0002 16"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

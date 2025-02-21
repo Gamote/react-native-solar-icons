@@ -8,10 +8,15 @@ const SvgMinusCircle = (props: SvgProps) => (
       cx={12}
       cy={12}
       r={10}
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
-    <Path d="M15 12H9" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
+    <Path
+      d="M15 12H9"
+      stroke={props.primaryColor}
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
   </Svg>
 );
 export default SvgMinusCircle;

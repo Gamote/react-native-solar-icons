@@ -5,14 +5,14 @@ const SvgDoubleAltArrowRight = (props: SvgProps) => (
   <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
       d="M11 19L17 12L11 5"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <Path
       d="M6.99982 19L12.9998 12L6.99982 5"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

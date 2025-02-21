@@ -50,11 +50,24 @@
   ```
 - Converted all SVGs to React components.
   ```bash
-  #npx svgr --icon --replace-attr-value '#000' --replace-attr-value 'currentColor' --template original/template.js original/ -d src/
   npx @svgr/cli \
     --native \
     --typescript \
     --svgo-config ./svgo.config.json \
+    --filename-case pascal \
+    --out-dir src/icons \
+    original/icons/SVG
+  ```
+- Create a custom SVGO plugin in `./svgo.plugin.js` to replace specific default colors with identifiers that we can then replace with props.
+- Use the plugin in the `./svgo.config.js` file.
+- Create custom type declarations in `src/react-native-svg-custom.d.ts` to make the `SvgProps` recognize the custom props: `primaryColor` and `secondaryColor`.
+- Convert all SVGs to React components with the custom SVGO plugin and replace the colors with props.
+  ```bash
+  npx @svgr/cli \
+    --native \
+    --typescript \
+    --svgo-config ./svgo.config.js \
+    --replace-attr-values "%%primaryColor%%={props.primaryColor},%%secondaryColor%%={props.secondaryColor}" \
     --filename-case pascal \
     --out-dir src/icons \
     original/icons/SVG

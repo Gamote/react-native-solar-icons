@@ -5,7 +5,7 @@ const SvgTransferVertical = (props: SvgProps) => (
   <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
       d="M10 4L10 20L4 14.5"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -13,7 +13,7 @@ const SvgTransferVertical = (props: SvgProps) => (
     <Path
       opacity={0.5}
       d="M14 20L14 4L20 9.5"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

@@ -8,7 +8,7 @@ const SvgTuning3 = (props: SvgProps) => (
       cy={12}
       r={2}
       transform="rotate(180 12 12)"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
     <Circle
@@ -16,47 +16,47 @@ const SvgTuning3 = (props: SvgProps) => (
       cy={14}
       r={2}
       transform="rotate(180 20 14)"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
     <Circle
       r={2}
       transform="matrix(-1 8.74228e-08 8.74228e-08 1 4 10)"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
     <Path
       opacity={0.5}
       d="M20 12L20 5"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       opacity={0.5}
       d="M4 12L4 19"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       opacity={0.5}
       d="M12 19L12 14"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       opacity={0.5}
       d="M20 19L20 16"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       opacity={0.5}
       d="M12 10V5M4 5L4 7.66667"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />

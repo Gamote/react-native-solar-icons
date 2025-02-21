@@ -6,7 +6,7 @@ const SvgMinimalisticMagnifer = (props: SvgProps) => (
     <Circle cx={11.5} cy={11.5} r={9.5} stroke="#8E93A6" strokeWidth={1.5} />
     <Path
       d="M20 20L22 22"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />

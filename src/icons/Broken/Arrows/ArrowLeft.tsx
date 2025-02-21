@@ -5,7 +5,7 @@ const SvgArrowLeft = (props: SvgProps) => (
   <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
       d="M4 12L10 6M4 12L10 18M4 12H14.5M20 12H17.5"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

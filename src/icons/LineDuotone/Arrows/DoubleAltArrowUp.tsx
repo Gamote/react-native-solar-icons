@@ -5,7 +5,7 @@ const SvgDoubleAltArrowUp = (props: SvgProps) => (
   <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
       d="M19 13L12 7L5 13"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -13,7 +13,7 @@ const SvgDoubleAltArrowUp = (props: SvgProps) => (
     <Path
       opacity={0.5}
       d="M19 17L12 11L5 17"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

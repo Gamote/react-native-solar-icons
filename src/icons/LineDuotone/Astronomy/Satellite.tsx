@@ -14,7 +14,7 @@ const SvgSatellite = (props: SvgProps) => (
     />
     <Path
       d="M13.0818 10.918C15.122 12.9581 18.4297 12.9581 20.4698 10.918C22.5099 8.87785 22.5099 5.57019 20.4698 3.53008C18.4297 1.48997 15.122 1.48997 13.0818 3.53008C11.0417 5.57019 11.0417 8.87785 13.0818 10.918Z"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />

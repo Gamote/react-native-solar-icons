@@ -6,27 +6,27 @@ const SvgListUpMinimalistic = (props: SvgProps) => (
     <Path
       opacity={0.5}
       d="M20 6L3 6"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       opacity={0.5}
       d="M20 11L3 11"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       opacity={0.5}
       d="M11 16H3"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       d="M14 18L17.5 15L21 18"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"

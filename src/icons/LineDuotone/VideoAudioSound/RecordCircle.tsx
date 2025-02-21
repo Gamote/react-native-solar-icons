@@ -8,10 +8,16 @@ const SvgRecordCircle = (props: SvgProps) => (
       cx={12}
       cy={12}
       r={10}
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
-    <Circle cx={12} cy={12} r={4} stroke="black" strokeWidth={1.5} />
+    <Circle
+      cx={12}
+      cy={12}
+      r={4}
+      stroke={props.primaryColor}
+      strokeWidth={1.5}
+    />
   </Svg>
 );
 export default SvgRecordCircle;

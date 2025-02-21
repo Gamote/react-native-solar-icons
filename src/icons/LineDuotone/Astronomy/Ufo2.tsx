@@ -5,7 +5,7 @@ const SvgUfo2 = (props: SvgProps) => (
   <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
       d="M17 7.21094C19.989 7.93258 22 9.28138 22 10.8262C22 13.1313 17.5228 14.9999 12 14.9999C6.47715 14.9999 2 13.1313 2 10.8262C2 9.28138 4.01099 7.93258 7 7.21094"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
     />
     <Path
@@ -14,11 +14,11 @@ const SvgUfo2 = (props: SvgProps) => (
       strokeWidth={1.5}
     />
     <Circle cx={12} cy={12} r={1} fill="#8E93A6" />
-    <Circle cx={7} cy={11} r={1} fill="black" />
-    <Circle cx={17} cy={11} r={1} fill="black" />
+    <Circle cx={7} cy={11} r={1} fill={props.primaryColor} />
+    <Circle cx={17} cy={11} r={1} fill={props.primaryColor} />
     <Path
       d="M12 21V18"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />

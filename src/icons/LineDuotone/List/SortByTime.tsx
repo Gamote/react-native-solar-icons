@@ -6,28 +6,34 @@ const SvgSortByTime = (props: SvgProps) => (
     <Path
       opacity={0.5}
       d="M10 7L2 7"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       opacity={0.5}
       d="M8 12H2"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
     <Path
       opacity={0.5}
       d="M10 17H2"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
     />
-    <Circle cx={17} cy={12} r={5} stroke="black" strokeWidth={1.5} />
+    <Circle
+      cx={17}
+      cy={12}
+      r={5}
+      stroke={props.primaryColor}
+      strokeWidth={1.5}
+    />
     <Path
       d="M17 10V11.8462L18 13"
-      stroke="black"
+      stroke={props.primaryColor}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
