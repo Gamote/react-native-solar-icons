@@ -1,6 +1,6 @@
 # React Native Solar Icons
 
-## Setup
+## Initial Setup
 
 ### Preparing the project
 - Initialize the project:
@@ -96,6 +96,10 @@
 - Ran the test script: `yarn testpack`
 - Install the package in a test project: `yarn add file:/absolute/path/to/react-native-solar-icons-v1.0.0.tgz`
 
+### Clean up
+
+The setup is done, there is no reason to keep the `original/` folder. We can remove it.
+In case we discover that we need to regenerate the icons, we can always clone the repository again.
 
 ## Known issues
 
