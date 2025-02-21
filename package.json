@@ -1,0 +1,15 @@
+{
+  "name": "react-native-solar-icons",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gamote <contact@gamote.ro>",
+  "license": "MIT",
+  "scripts": {
+    "rename-icons": "tsx scripts/rename-icons.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "tsx": "^4.19.3"
+  },
+  "packageManager": "yarn@4.6.0"
+}
