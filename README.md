@@ -59,9 +59,19 @@
     --out-dir src/icons \
     original/icons/SVG
   ```
-  
+
+## Creating the SolarIcon component and index files
 - Created a script to generate index files for the icon categories, types and helpers in `scripts/generate-icons-index.ts`
 - Added a script in `package.json` to run the script: `"generate-icons-index": "tsx scripts/generate-icons-index.ts"`
 - Ran the script: `yarn generate-icons-index`
 
 - Created `src/SolarIcon.tsx` to provide a single entry point for the icons.
+
+- Created `src/index.ts` to export the `SolarIcon` component.
+
+## Build
+- Added a `tsconfig.json` file.
+- Added a script in `package.json` to build the project: `"build": "tsc"`
+- Set the `main` and `types` fields in `package.json` to point to the built files.
+- Add the `peerDependencies` field in `package.json` to list the required dependencies.
+- Ran the build script: `yarn build`
