@@ -19,7 +19,7 @@ export const SolarIcon = <T extends IconType>({
                                                 name,
                                                 size = 24,
                                                 color = '#000',
-                                                secondaryColor,
+                                                secondaryColor = '#FFF',
                                                 ...rest
                                               }: SolarIconProps<T>) => {
   const IconComponent = getIconComponent(type ?? IconTypes.Bold, name);
