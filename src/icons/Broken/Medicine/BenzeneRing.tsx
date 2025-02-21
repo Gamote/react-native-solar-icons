@@ -2,31 +2,39 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgBenzeneRing = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M7.02073 6.63792C6.03454 7.22412 5.54145 7.51723 5.27073 8C5 8.48277 5 9.06898 5 10.2414V13.7586C5 14.931 5 15.5172 5.27073 16C5.54145 16.4828 6.03454 16.7759 7.02073 17.3621L9.97927 19.1207C10.9655 19.7069 11.4585 20 12 20C12.5415 20 13.0345 19.7069 14.0207 19.1207L16.9793 17.3621C17.9655 16.7759 18.4585 16.4828 18.7293 16C18.9807 15.5516 18.9986 15.0139 18.9999 14M9.97927 4.87931C10.9655 4.2931 11.4585 4 12 4C12.5415 4 13.0345 4.2931 14.0207 4.87931L16.9793 6.63792C17.9655 7.22412 18.4585 7.51723 18.7293 8C18.9808 8.44845 18.9986 8.98615 18.9999 10.0001"
+      stroke="black"
       strokeWidth={1.5}
-      d="M7.02 6.638c-.985.586-1.479.88-1.75 1.362S5 9.069 5 10.241v3.518c0 1.172 0 1.758.27 2.241.271.483.765.776 1.75 1.362l2.96 1.759c.986.586 1.479.879 2.02.879s1.034-.293 2.02-.88l2.96-1.758c.985-.586 1.479-.88 1.75-1.362.25-.448.269-.986.27-2M9.98 4.88C10.965 4.292 11.458 4 12 4s1.034.293 2.02.88l2.96 1.758c.985.586 1.479.88 1.75 1.362.25.448.269.986.27 2"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M5 8L2 6"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M5 8 2 6M19 8l3-2M5 16l-3 2"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M19 8L22 6"
+      stroke="black"
       strokeWidth={1.5}
-      d="m12 16.884 4-2.384"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <Path
+      d="M5 16L2 18"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <Path
+      d="M12 16.8841L16 14.5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

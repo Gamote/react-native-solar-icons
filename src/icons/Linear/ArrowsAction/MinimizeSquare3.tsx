@@ -2,30 +2,24 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgMinimizeSquare3 = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M13 21.9994C17.055 21.9921 19.1785 21.8926 20.5355 20.5355C22 19.0711 22 16.714 22 12C22 7.28595 22 4.92893 20.5355 3.46447C19.071 2 16.714 2 12 2C7.28593 2 4.9289 2 3.46444 3.46447C2.10741 4.8215 2.00785 6.94493 2.00055 11"
+      stroke="black"
       strokeWidth={1.5}
-      d="M13 22c4.055-.008 6.179-.107 7.535-1.465C22 19.072 22 16.714 22 12s0-7.071-1.465-8.536C19.072 2 16.714 2 12 2S4.929 2 3.464 3.464C2.107 4.822 2.008 6.944 2.001 11"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M17 7L12 12M12 12H15.75M12 12V8.25"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="m17 7-5 5m0 0h3.75M12 12V8.25"
     />
     <Path
-      stroke="#000"
+      d="M2 18C2 16.1144 2 15.1716 2.58579 14.5858C3.17157 14 4.11438 14 6 14C7.88562 14 8.82843 14 9.41421 14.5858C10 15.1716 10 16.1144 10 18C10 19.8856 10 20.8284 9.41421 21.4142C8.82843 22 7.88562 22 6 22C4.11438 22 3.17157 22 2.58579 21.4142C2 20.8284 2 19.8856 2 18Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M2 18c0-1.886 0-2.828.586-3.414S4.114 14 6 14s2.828 0 3.414.586S10 16.114 10 18s0 2.828-.586 3.414S7.886 22 6 22s-2.828 0-3.414-.586S2 19.886 2 18Z"
     />
   </Svg>
 );

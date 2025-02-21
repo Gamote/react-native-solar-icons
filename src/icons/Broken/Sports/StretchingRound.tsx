@@ -2,19 +2,13 @@ import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgStretchingRound = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <Circle cx={14.5} cy={4.5} r={2.5} stroke="#000" strokeWidth={1.5} />
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <Circle cx={14.5} cy={4.5} r={2.5} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M19 21.9955V18.0484C19 16.2725 17.395 14.9194 15.6265 15.2042M7.94806 13.4343L7.92328 13.4104C6.88143 12.4036 7.6864 10.7847 8.5932 10.1422C9.5 9.49967 13.3451 8.49967 13.3451 13.4341C13.3451 15.1268 12.8704 16.7126 12.0433 18.0484M5 21.9998C6.46053 21.9998 7.82003 21.6251 9 20.9674"
+      stroke="black"
       strokeWidth={1.5}
-      d="M19 21.996v-3.948c0-1.775-1.605-3.129-3.373-2.844m-7.679-1.77-.025-.024c-1.042-1.006-.237-2.625.67-3.268s4.752-1.642 4.752 3.292a8.74 8.74 0 0 1-1.302 4.614M5 22c1.46 0 2.82-.375 4-1.033"
+      strokeLinecap="round"
     />
   </Svg>
 );

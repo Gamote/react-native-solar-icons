@@ -2,35 +2,53 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgSafeSquare = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M6 7L6 8M6 17L6 12"
+      stroke="black"
       strokeWidth={1.5}
-      d="M6 7v1m0 9v-5"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M11 12C11 10.3431 12.3431 9 14 9C15.6569 9 17 10.3431 17 12C17 13.6569 15.6569 15 14 15C12.3431 15 11 13.6569 11 12Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M11 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0Z"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M12.5 9.40135C12.9413 9.14609 13.4536 9 14 9C15.6569 9 17 10.3431 17 12C17 13.6569 15.6569 15 14 15C12.3431 15 11 13.6569 11 12C11 11.4536 11.1461 10.9413 11.4013 10.5"
+      stroke="black"
       strokeWidth={1.5}
-      d="M12.5 9.401a3 3 0 1 1-1.099 1.099M16.5 9.5 18 8M10 16l1.5-1.5M11.5 9.5 10 8M18 16l-1.5-1.5"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M16.5 9.5L18 8"
+      stroke="black"
       strokeWidth={1.5}
-      d="M22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12s0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464c.974.974 1.3 2.343 1.41 4.536"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M10 16L11.5 14.5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M11.5 9.5L10 8"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M18 16L16.5 14.5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

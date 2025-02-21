@@ -2,19 +2,20 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgDoubleAltArrowUp = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M19 13L12 7L10.25 8.5M5 13L7.33333 11"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
+    />
+    <Path
+      d="M5 17L12 11L13.75 12.5M19 17L16.6667 15"
+      stroke="black"
       strokeWidth={1.5}
-      d="m19 13-7-6-1.75 1.5M5 13l2.333-2M5 17l7-6 1.75 1.5M19 17l-2.333-2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </Svg>
 );

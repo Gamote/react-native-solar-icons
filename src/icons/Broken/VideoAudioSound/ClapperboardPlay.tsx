@@ -2,25 +2,34 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgClapperboardPlay = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <Path fill="#000" d="M2.5 7.25a.75.75 0 0 0 0 1.5zm19.5 0H2.5v1.5H22z" />
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M10.5 2.5 7 8M17 2.5 13.5 8M15 14.5c0-.633-.662-1.06-1.986-1.915-1.342-.866-2.013-1.299-2.514-.98-.5.317-.5 1.176-.5 2.895s0 2.578.5 2.896 1.172-.115 2.514-.981C14.338 15.56 15 15.133 15 14.5Z"
+      d="M2.5 7.25C2.08579 7.25 1.75 7.58579 1.75 8C1.75 8.41421 2.08579 8.75 2.5 8.75V7.25ZM22 7.25H2.5V8.75H22V7.25Z"
+      fill="black"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M10.5 2.5L7 8"
+      stroke="black"
       strokeWidth={1.5}
-      d="M22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12s0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464c.974.974 1.3 2.343 1.41 4.536"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M17 2.5L13.5 8"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M15 14.5C15 13.8666 14.338 13.4395 13.014 12.5852C11.6719 11.7193 11.0008 11.2863 10.5004 11.6042C10 11.9221 10 12.7814 10 14.5C10 16.2186 10 17.0779 10.5004 17.3958C11.0008 17.7137 11.6719 17.2807 13.014 16.4148C14.338 15.5605 15 15.1334 15 14.5Z"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

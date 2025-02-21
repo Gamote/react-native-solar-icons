@@ -2,29 +2,46 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgSafeCircle = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Z"
-    />
-    <Path stroke="#000" strokeLinecap="round" strokeWidth={1.5} d="M7 8v8" />
-    <Path
-      stroke="#000"
-      strokeWidth={1.5}
-      d="M12 12a2 2 0 1 1 4 0 2 2 0 0 1-4 0Z"
     />
     <Path
-      stroke="#000"
+      d="M7 8L7 16"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
+    />
+    <Path
+      d="M12 12C12 10.8954 12.8954 10 14 10C15.1046 10 16 10.8954 16 12C16 13.1046 15.1046 14 14 14C12.8954 14 12 13.1046 12 12Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="m16 10 1-1M11 15l1-1M12 10l-1-1M17 15l-1-1"
+    />
+    <Path
+      d="M16 10L17 9"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M11 15L12 14"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M12 10L11 9"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M17 15L16 14"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

@@ -2,31 +2,31 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgScreencast = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M14 20C17.7712 20 19.6569 20 20.8284 18.8284C22 17.6569 22 15.7712 22 12C22 8.22876 22 6.34315 20.8284 5.17157C19.6569 4 17.7712 4 14 4H6.5C6.03566 4 5.80349 4 5.60793 4.01926C3.70882 4.20631 2.20631 5.70882 2.01926 7.60793C2 7.80349 2 8.03566 2 8.5"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M14 20c3.771 0 5.657 0 6.828-1.172S22 15.771 22 12s0-5.657-1.172-6.828S17.771 4 14 4H6.5c-.464 0-.697 0-.892.02a4 4 0 0 0-3.589 3.588C2 7.803 2 8.036 2 8.5"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M11 20C11 15.0294 6.97056 11 2 11"
+      stroke="black"
       strokeWidth={1.5}
-      d="M11 20a9 9 0 0 0-9-9"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M8 20C8 16.6863 5.31371 14 2 14"
+      stroke="black"
       strokeWidth={1.5}
-      d="M8 20a6 6 0 0 0-6-6M5 20a3 3 0 0 0-3-3"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M5 20C5 18.3431 3.65685 17 2 17"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

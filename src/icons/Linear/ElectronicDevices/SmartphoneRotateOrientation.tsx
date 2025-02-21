@@ -2,35 +2,36 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgSmartphoneRotateOrientation = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M2 8C2 5.17157 2 3.75736 2.87868 2.87868C3.75736 2 5.17157 2 8 2H9C11.8284 2 13.2426 2 14.1213 2.87868C15 3.75736 15 5.17157 15 8V16C15 18.8284 15 20.2426 14.1213 21.1213C13.2426 22 11.8284 22 9 22H8C5.17157 22 3.75736 22 2.87868 21.1213C2 20.2426 2 18.8284 2 16V8Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M2 8c0-2.828 0-4.243.879-5.121C3.757 2 5.172 2 8 2h1c2.828 0 4.243 0 5.121.879C15 3.757 15 5.172 15 8v8c0 2.828 0 4.243-.879 5.121C13.243 22 11.828 22 9 22H8c-2.828 0-4.243 0-5.121-.879C2 20.243 2 18.828 2 16z"
     />
     <Path
-      stroke="#000"
+      d="M17.5 10.0063C19.3597 10.0333 20.414 10.1712 21.1213 10.8785C22 11.7572 22 13.1714 22 15.9998C22 18.8283 22 20.2425 21.1213 21.1212C20.414 21.8285 19.3597 21.9664 17.5 21.9933"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
+    />
+    <Path d="M11 5H6" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
+    <Path
+      d="M19 18V14"
+      stroke="black"
       strokeWidth={1.5}
-      d="M17.5 10.006c1.86.027 2.914.165 3.621.873.879.878.879 2.292.879 5.12 0 2.83 0 4.243-.879 5.122-.707.707-1.761.845-3.621.872M11 5H6M19 18v-4"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M10 17.5C10 18.3284 9.32843 19 8.5 19C7.67157 19 7 18.3284 7 17.5C7 16.6716 7.67157 16 8.5 16C9.32843 16 10 16.6716 10 17.5Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M10 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
     />
     <Path
-      stroke="#000"
+      d="M20.5 6.98598L22 8C22 4.98532 19.8377 2.48275 17 2"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M20.5 6.986 22 8c0-3.015-2.162-5.517-5-6"
     />
   </Svg>
 );

@@ -2,25 +2,19 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgRemoteControllerMinimalistic = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M5 9C5 6.19108 5 4.78661 5.67412 3.77772C5.96596 3.34096 6.34096 2.96596 6.77772 2.67412C7.78661 2 9.19108 2 12 2C14.8089 2 16.2134 2 17.2223 2.67412C17.659 2.96596 18.034 3.34096 18.3259 3.77772C19 4.78661 19 6.19108 19 9V15C19 17.8089 19 19.2134 18.3259 20.2223C18.034 20.659 17.659 21.034 17.2223 21.3259C16.2134 22 14.8089 22 12 22C9.19108 22 7.78661 22 6.77772 21.3259C6.34096 21.034 5.96596 20.659 5.67412 20.2223C5 19.2134 5 17.8089 5 15V9Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M5 9c0-2.809 0-4.213.674-5.222a4 4 0 0 1 1.104-1.104C7.787 2 9.19 2 12 2s4.213 0 5.222.674c.437.292.812.667 1.104 1.104C19 4.787 19 6.19 19 9v6c0 2.809 0 4.213-.674 5.222a4 4 0 0 1-1.104 1.104C16.213 22 14.81 22 12 22s-4.213 0-5.222-.674a4 4 0 0 1-1.104-1.104C5 19.213 5 17.81 5 15z"
     />
     <Path
-      stroke="#000"
+      d="M15 11C15 12.6569 13.6569 14 12 14C10.3431 14 9 12.6569 9 11C9 9.34315 10.3431 8 12 8C13.6569 8 15 9.34315 15 11Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
     />
-    <Circle cx={12} cy={5} r={1} fill="#000" />
-    <Circle cx={12} cy={17} r={1} fill="#000" />
+    <Circle cx={12} cy={5} r={1} fill="black" />
+    <Circle cx={12} cy={17} r={1} fill="black" />
   </Svg>
 );
 export default SvgRemoteControllerMinimalistic;

@@ -2,24 +2,30 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgSoundwaveCircle = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M12 7L12 17"
+      stroke="black"
       strokeWidth={1.5}
-      d="M12 7v10M17 10v4M7 9v6"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M17 10L17 14"
+      stroke="black"
       strokeWidth={1.5}
-      d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Z"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M7 9L7 15"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
       opacity={0.5}
+      d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z"
+      stroke="black"
+      strokeWidth={1.5}
     />
   </Svg>
 );

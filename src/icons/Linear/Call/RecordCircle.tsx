@@ -2,29 +2,28 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgRecordCircle = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M18.5002 11.9999C18.5002 13.3807 17.3809 14.4999 16.0002 14.4999C14.6195 14.4999 13.5002 13.3807 13.5002 11.9999C13.5002 10.6192 14.6195 9.49994 16.0002 9.49994C17.3809 9.49994 18.5002 10.6192 18.5002 11.9999Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M18.5 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
     />
     <Path
-      stroke="#000"
+      d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Z"
     />
     <Path
-      stroke="#000"
+      d="M10.5 12C10.5 13.3807 9.38071 14.5 8 14.5C6.61929 14.5 5.5 13.3807 5.5 12C5.5 10.6193 6.61929 9.5 8 9.5C9.38071 9.5 10.5 10.6193 10.5 12Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M10.5 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
     />
-    <Path stroke="#000" strokeLinecap="round" strokeWidth={1.5} d="M8 14.5h8" />
+    <Path
+      d="M8 14.5H16"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
   </Svg>
 );
 export default SvgRecordCircle;

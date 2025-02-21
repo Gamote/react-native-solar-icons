@@ -2,19 +2,13 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgReply2 = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M4.5 12L9.5 17M4.5 12L9.5 7M4.5 12L11 12M14.5 12C16.1667 12 19.5 11 19.5 7"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="m4.5 12 5 5m-5-5 5-5m-5 5H11m3.5 0c1.667 0 5-1 5-5"
     />
   </Svg>
 );

@@ -2,29 +2,29 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgBasketball = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M3.33946 16.9997C6.10089 21.7826 12.2168 23.4214 16.9997 20.66C18.9493 19.5344 20.3765 17.8514 21.1962 15.9286C22.3875 13.1341 22.2958 9.83304 20.66 6.99972C19.0242 4.1664 16.2112 2.43642 13.1955 2.07088C11.1204 1.81935 8.94932 2.21386 6.99972 3.33946C2.21679 6.10089 0.578039 12.2168 3.33946 16.9997Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M3.34 17C6.1 21.783 12.216 23.42 17 20.66a9.96 9.96 0 0 0 4.196-4.731 9.99 9.99 0 0 0-.536-8.93 9.99 9.99 0 0 0-7.465-4.928A9.96 9.96 0 0 0 7 3.339C2.217 6.101.578 12.217 3.34 17Z"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M16.9497 20.5732C16.9497 20.5732 16.0108 13.982 14.0004 10.5C11.9901 7.01798 7.05023 3.42676 7.05023 3.42676"
+      stroke="black"
       strokeWidth={1.5}
-      d="M16.95 20.573S16.01 13.982 14 10.5 7.05 3.427 7.05 3.427"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M21.8636 12.5799C16.4526 11.3928 9.05882 16.3475 7.57718 20.8172"
+      stroke="black"
       strokeWidth={1.5}
-      d="M21.864 12.58c-5.411-1.187-12.805 3.768-14.287 8.237M16.414 3.209c-1.488 4.42-8.74 9.303-14.125 8.243"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M16.414 3.20884C14.9261 7.6299 7.67431 12.5122 2.28865 11.4515"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

@@ -1,41 +1,42 @@
 import * as React from "react";
-import Svg, { G, Path, Defs, ClipPath } from "react-native-svg";
+import Svg, { G, Path, Defs, ClipPath, Rect } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgGamepadOld = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <G clipPath="url(#GamepadOld_svg__a)">
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <G clipPath="url(#clip0_1648_7577)">
       <Path
-        stroke="#000"
-        strokeLinecap="round"
-        strokeWidth={1.5}
-        d="M8 10v4m-2-2h4"
         opacity={0.5}
+        d="M8 10V14M6 12L10 12"
+        stroke="black"
+        strokeWidth={1.5}
+        strokeLinecap="round"
       />
-      <G fill="#000" opacity={0.5}>
-        <Path d="M16 10.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0M18 13.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+      <G opacity={0.5}>
+        <Path
+          d="M16 10.5C16 11.0523 15.5523 11.5 15 11.5C14.4477 11.5 14 11.0523 14 10.5C14 9.94772 14.4477 9.5 15 9.5C15.5523 9.5 16 9.94772 16 10.5Z"
+          fill="black"
+        />
+        <Path
+          d="M18 13.5C18 14.0523 17.5523 14.5 17 14.5C16.4477 14.5 16 14.0523 16 13.5C16 12.9477 16.4477 12.5 17 12.5C17.5523 12.5 18 12.9477 18 13.5Z"
+          fill="black"
+        />
       </G>
       <Path
-        stroke="#000"
-        strokeLinecap="round"
-        strokeWidth={1.5}
-        d="M12 4V3a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1V0"
         opacity={0.5}
+        d="M12 4V3C12 2.44772 12.4477 2 13 2H14C14.5523 2 15 1.55228 15 1V0"
+        stroke="black"
+        strokeWidth={1.5}
+        strokeLinecap="round"
       />
       <Path
-        stroke="#000"
+        d="M2 12C2 9.19974 2 7.79961 2.54497 6.73005C3.02433 5.78924 3.78924 5.02433 4.73005 4.54497C5.79961 4 7.19974 4 10 4H14C16.8003 4 18.2004 4 19.27 4.54497C20.2108 5.02433 20.9757 5.78924 21.455 6.73005C22 7.79961 22 9.19974 22 12C22 14.8003 22 16.2004 21.455 17.27C20.9757 18.2108 20.2108 18.9757 19.27 19.455C18.2004 20 16.8003 20 14 20H10C7.19974 20 5.79961 20 4.73005 19.455C3.78924 18.9757 3.02433 18.2108 2.54497 17.27C2 16.2004 2 14.8003 2 12Z"
+        stroke="black"
         strokeWidth={1.5}
-        d="M2 12c0-2.8 0-4.2.545-5.27A5 5 0 0 1 4.73 4.545C5.8 4 7.2 4 10 4h4c2.8 0 4.2 0 5.27.545a5 5 0 0 1 2.185 2.185C22 7.8 22 9.2 22 12s0 4.2-.545 5.27a5 5 0 0 1-2.185 2.185C18.2 20 16.8 20 14 20h-4c-2.8 0-4.2 0-5.27-.545a5 5 0 0 1-2.185-2.185C2 16.2 2 14.8 2 12Z"
       />
     </G>
     <Defs>
-      <ClipPath id="GamepadOld_svg__a">
-        <Path fill="#fff" d="M0 0h24v24H0z" />
+      <ClipPath id="clip0_1648_7577">
+        <Rect width={24} height={24} fill="white" />
       </ClipPath>
     </Defs>
   </Svg>

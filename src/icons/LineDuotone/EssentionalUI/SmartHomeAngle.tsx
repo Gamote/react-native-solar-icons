@@ -2,31 +2,31 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgSmartHomeAngle = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M2.011 10c-.044-.874.037-1.527.324-2.125.54-1.127 1.691-1.812 3.992-3.183l1.385-.825C9.8 2.622 10.846 2 12 2s2.199.622 4.288 1.867l1.385.825c2.3 1.37 3.451 2.056 3.992 3.183s.35 2.446-.03 5.083l-.278 1.937c-.487 3.388-.731 5.082-1.906 6.093-1.069.92-2.591 1.004-5.451 1.011"
       opacity={0.5}
+      d="M2.01096 10.0002C1.96724 9.12562 2.0484 8.47345 2.33524 7.87513C2.8757 6.74779 4.02607 6.06252 6.32679 4.69199L7.71163 3.86705C9.80092 2.62247 10.8456 2.00018 11.9999 2.00018C13.1542 2.00018 14.1988 2.62247 16.2881 3.86705L17.673 4.69199C19.9737 6.06252 21.1241 6.74779 21.6645 7.87513C22.205 9.00247 22.0153 10.321 21.6358 12.9581L21.357 14.8954C20.8696 18.2828 20.6259 19.9766 19.4509 20.9884C18.3821 21.9086 16.8598 21.9919 13.9999 21.9994"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M11 22C11 17.0294 6.97056 13 2 13"
+      stroke="black"
       strokeWidth={1.5}
-      d="M11 22a9 9 0 0 0-9-9"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M8 22C8 18.6863 5.31371 16 2 16"
+      stroke="black"
       strokeWidth={1.5}
-      d="M8 22a6 6 0 0 0-6-6M5 22a3 3 0 0 0-3-3"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M5 22C5 20.3431 3.65685 19 2 19"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

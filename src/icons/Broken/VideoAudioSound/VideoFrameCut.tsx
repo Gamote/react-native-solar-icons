@@ -2,38 +2,44 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgVideoFrameCut = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M17 3.5V20.5"
+      stroke="black"
       strokeWidth={1.5}
-      d="M17 3.5v17"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M12 2V22"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
       strokeDasharray="3 3"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M12 2v20"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M7 3.5V20.5"
+      stroke="black"
       strokeWidth={1.5}
-      d="M7 3.5v17M3 8.5h4m14 0h-4M3 15.5h4m14 0h-4"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M3 8.5L7 8.5M21 8.5H17"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M3 15.5L5.75 15.5L7 15.5M21 15.5L17 15.5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M14.5 3.00293C17.2939 3.02331 18.8237 3.16641 19.8284 4.17112C20.8916 5.23426 20.99 6.8854 20.9991 10M14.5 20.9962C17.2939 20.9758 18.8237 20.8327 19.8284 19.828C20.8916 18.7648 20.99 17.1137 20.9991 13.9991M9.49991 20.9962C6.70609 20.9758 5.17627 20.8327 4.17157 19.828C3 18.6564 3 16.7708 3 12.9995V10.9995C3 7.22831 3 5.34269 4.17157 4.17112C5.17627 3.16642 6.70609 3.02331 9.49991 3.00293"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M14.5 3.003c2.794.02 4.324.163 5.328 1.168C20.892 5.234 20.99 6.885 21 10M14.5 20.996c2.794-.02 4.324-.163 5.328-1.168 1.064-1.063 1.162-2.714 1.171-5.829M9.5 20.996c-2.793-.02-4.323-.163-5.327-1.168C3 18.656 3 16.771 3 13v-2C3 7.227 3 5.342 4.172 4.17 5.176 3.166 6.706 3.023 9.5 3.003"
     />
   </Svg>
 );

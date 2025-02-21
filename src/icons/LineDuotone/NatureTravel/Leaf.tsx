@@ -2,23 +2,17 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgLeaf = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeWidth={1.5}
-      d="m12 9 4.5-4.5m-4.5 10L18.5 8M12 19.5l7.5-7.5"
       opacity={0.5}
+      d="M12 9L16.5 4.5M12 14.5L18.5 8M12 19.5L19.5 12"
+      stroke="black"
+      strokeWidth={1.5}
     />
     <Path
-      stroke="#000"
+      d="M12 22C16.4183 22 20 18.3541 20 13.8567C20 9.39453 17.4467 4.18759 13.4629 2.32555C12.9986 2.10852 12.4993 2 12 2M12 22C7.58172 22 4 18.3541 4 13.8567C4 9.39453 6.55332 4.18759 10.5371 2.32555C11.0014 2.10852 11.5007 2 12 2M12 22V2"
+      stroke="black"
       strokeWidth={1.5}
-      d="M12 22c4.418 0 8-3.646 8-8.143 0-4.462-2.553-9.67-6.537-11.531A3.45 3.45 0 0 0 12 2m0 20c-4.418 0-8-3.646-8-8.143 0-4.462 2.553-9.67 6.537-11.531A3.45 3.45 0 0 1 12 2m0 20V2"
     />
   </Svg>
 );

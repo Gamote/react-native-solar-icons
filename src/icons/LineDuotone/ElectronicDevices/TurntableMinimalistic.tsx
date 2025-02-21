@@ -2,37 +2,31 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgTurntableMinimalistic = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="m14 10.5 2.555-1.703A1 1 0 0 0 17 7.965V2.5"
       opacity={0.5}
+      d="M14 10.5L16.5547 8.79687C16.8329 8.6114 17 8.29917 17 7.96482V2.5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C12.5226 7 13.0265 7.08018 13.5 7.2289"
+      stroke="black"
       strokeWidth={1.5}
-      d="M17 12a5 5 0 1 1-3.5-4.771"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M12 14a2 2 0 0 1-2-2"
       opacity={0.5}
+      d="M12 14C10.8954 14 10 13.1046 10 12"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

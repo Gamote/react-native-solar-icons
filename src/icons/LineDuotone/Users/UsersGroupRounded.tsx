@@ -2,27 +2,21 @@ import * as React from "react";
 import Svg, { Circle, Path, Ellipse } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgUsersGroupRounded = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <Circle cx={9} cy={6} r={4} stroke="#000" strokeWidth={1.5} />
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <Circle cx={9} cy={6} r={4} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
-      strokeWidth={1.5}
-      d="M12.5 4.341a3 3 0 1 1 0 3.318"
       opacity={0.5}
+      d="M12.5 4.3411C13.0375 3.53275 13.9565 3 15 3C16.6569 3 18 4.34315 18 6C18 7.65685 16.6569 9 15 9C13.9565 9 13.0375 8.46725 12.5 7.6589"
+      stroke="black"
+      strokeWidth={1.5}
     />
-    <Ellipse cx={9} cy={17} stroke="#000" strokeWidth={1.5} rx={7} ry={4} />
+    <Ellipse cx={9} cy={17} rx={7} ry={4} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M18 14c1.754.385 3 1.359 3 2.5 0 1.03-1.014 1.923-2.5 2.37"
       opacity={0.5}
+      d="M18 14C19.7542 14.3847 21 15.3589 21 16.5C21 17.5293 19.9863 18.4229 18.5 18.8704"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

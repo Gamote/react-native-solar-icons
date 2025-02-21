@@ -2,19 +2,20 @@ import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgNotificationUnreadLines = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <Circle cx={19} cy={5} r={3} stroke="#000" strokeWidth={1.5} />
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <Circle cx={19} cy={5} r={3} stroke="black" strokeWidth={1.5} />
+    <Path d="M7 14H16" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M7 17.5H13"
+      stroke="black"
       strokeWidth={1.5}
-      d="M7 14h9M7 17.5h6M2 12c0 4.714 0 7.071 1.464 8.535C4.93 22 7.286 22 12 22s7.071 0 8.535-1.465C22 19.072 22 16.714 22 12v-1.5M13.5 2H12C7.286 2 4.929 2 3.464 3.464c-.973.974-1.3 2.343-1.409 4.536"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M2 12C2 16.714 2 19.0711 3.46447 20.5355C4.92893 22 7.28595 22 12 22C16.714 22 19.0711 22 20.5355 20.5355C22 19.0711 22 16.714 22 12V10.5M13.5 2H12C7.28595 2 4.92893 2 3.46447 3.46447C2.49073 4.43821 2.16444 5.80655 2.0551 8"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

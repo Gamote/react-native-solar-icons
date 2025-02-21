@@ -2,25 +2,19 @@ import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgUserBlock = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <Circle cx={12} cy={6} r={4} stroke="#000" strokeWidth={1.5} />
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <Circle cx={12} cy={6} r={4} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
-      strokeWidth={1.5}
-      d="M15 13.327A13.6 13.6 0 0 0 12 13c-4.418 0-8 2.015-8 4.5S4 22 12 22c5.687 0 7.331-1.018 7.807-2.5"
       opacity={0.5}
+      d="M15 13.3271C14.0736 13.1162 13.0609 13 12 13C7.58172 13 4 15.0147 4 17.5C4 19.9853 4 22 12 22C17.6874 22 19.3315 20.9817 19.8068 19.5"
+      stroke="black"
+      strokeWidth={1.5}
     />
     <Path
-      stroke="#000"
-      strokeLinejoin="round"
+      d="M15.1715 18.8284C15.8954 19.5523 16.8954 20 18 20C20.2091 20 22 18.2091 22 16C22 14.8954 21.5523 13.8954 20.8284 13.1715M15.1715 18.8284C14.4477 18.1045 14 17.1046 14 16C14 13.7909 15.7909 12 18 12C19.1046 12 20.1045 12.4477 20.8284 13.1715M15.1715 18.8284L20.8284 13.1715"
+      stroke="black"
       strokeWidth={1.5}
-      d="M15.172 18.828a4 4 0 1 0 5.657-5.657m-5.658 5.657a4 4 0 0 1 5.657-5.657m-5.656 5.657 5.656-5.656"
+      strokeLinejoin="round"
     />
   </Svg>
 );

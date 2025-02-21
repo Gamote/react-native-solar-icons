@@ -2,22 +2,16 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgRewindForward = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M11 8.76844L4.90337 4.30838C3.60089 3.41122 2.00025 4.57895 2.00025 6.42632L2.00024 17.5737C2.00024 19.4211 3.60089 20.5888 4.90337 19.6916L11 15.2316"
+      stroke="black"
       strokeWidth={1.5}
-      d="m11 8.768-6.097-4.46C3.601 3.411 2 4.58 2 6.426v11.148c0 1.847 1.6 3.015 2.903 2.118L11 15.232"
     />
     <Path
-      stroke="#000"
+      d="M21.0786 10.1468C22.3071 10.9545 22.3071 13.0455 21.0786 13.8532L13.6612 18.7302C12.4673 19.5152 11 18.4934 11 16.877L11 7.12303C11 5.50658 12.4673 4.48482 13.6612 5.26983L21.0786 10.1468Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M21.079 10.147c1.228.807 1.228 2.899 0 3.706L13.66 18.73c-1.194.785-2.661-.237-2.661-1.853V7.123c0-1.616 1.467-2.638 2.661-1.853z"
     />
   </Svg>
 );

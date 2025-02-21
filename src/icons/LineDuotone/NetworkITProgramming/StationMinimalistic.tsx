@@ -2,44 +2,38 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgStationMinimalistic = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M13.25 8.75C13.25 9.44036 12.6904 10 12 10C11.3096 10 10.75 9.44036 10.75 8.75C10.75 8.05964 11.3096 7.5 12 7.5C12.6904 7.5 13.25 8.05964 13.25 8.75Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M13.25 8.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Z"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M7.008 14A7.06 7.06 0 0 1 5 9.055C5 5.159 8.134 2 12 2s7 3.159 7 7.055a7.06 7.06 0 0 1-1.977 4.913"
       opacity={0.4}
-    />
-    <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M7.00778 14C5.76601 12.7269 5 10.981 5 9.05473C5 5.15851 8.13401 2 12 2C15.866 2 19 5.15851 19 9.05473C19 10.9647 18.2468 12.6975 17.0235 13.9677"
+      stroke="black"
       strokeWidth={1.5}
-      d="M8.988 12.004A4.24 4.24 0 0 1 7.8 9.054c0-2.337 1.88-4.232 4.2-4.232s4.2 1.895 4.2 4.233c0 1.13-.44 2.158-1.157 2.917"
-      opacity={0.7}
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      opacity={0.7}
+      d="M8.98785 12.0044C8.25272 11.2421 7.80005 10.2016 7.80005 9.05461C7.80005 6.71688 9.68045 4.82178 12 4.82178C14.3196 4.82178 16.2 6.71688 16.2 9.05461C16.2 10.1854 15.7601 11.2126 15.0433 11.9718"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M16 22L12 10L8 22"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="m16 22-4-12-4 12"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M14.5 17.5H9.5"
+      stroke="black"
       strokeWidth={1.5}
-      d="M14.5 17.5h-5"
+      strokeLinecap="round"
     />
   </Svg>
 );

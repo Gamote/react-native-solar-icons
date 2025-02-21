@@ -2,26 +2,22 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgSortByTime = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M10 7L2 7"
+      stroke="black"
       strokeWidth={1.5}
-      d="M10 7H2M8 12H2M10 17H2"
+      strokeLinecap="round"
     />
-    <Circle cx={17} cy={12} r={5} stroke="#000" strokeWidth={1.5} />
+    <Path d="M8 12H2" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
+    <Path d="M10 17H2" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
+    <Circle cx={17} cy={12} r={5} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
+      d="M17 10V11.8462L18 13"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M17 10v1.846L18 13"
     />
   </Svg>
 );

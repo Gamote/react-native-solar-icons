@@ -2,21 +2,16 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgSmartphone2 = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M4 10C4 6.22876 4 4.34315 5.17157 3.17157C6.34315 2 8.22876 2 12 2C15.7712 2 17.6569 2 18.8284 3.17157C20 4.34315 20 6.22876 20 10V14C20 17.7712 20 19.6569 18.8284 20.8284C17.6569 22 15.7712 22 12 22C8.22876 22 6.34315 22 5.17157 20.8284C4 19.6569 4 17.7712 4 14V10Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M4 10c0-3.771 0-5.657 1.172-6.828S8.229 2 12 2s5.657 0 6.828 1.172S20 6.229 20 10v4c0 3.771 0 5.657-1.172 6.828S15.771 22 12 22s-5.657 0-6.828-1.172S4 17.771 4 14z"
     />
-    <Path stroke="#000" strokeLinecap="round" strokeWidth={1.5} d="M15 5H9" />
-    <Circle cx={12} cy={19} r={1} stroke="#000" />
-    <Path stroke="#000" d="M4 17h16M4 7h16" />
+    <Path d="M15 5H9" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
+    <Circle cx={12} cy={19} r={1} stroke="black" />
+    <Path d="M4 17H20" stroke="black" />
+    <Path d="M4 7H20" stroke="black" />
   </Svg>
 );
 export default SvgSmartphone2;

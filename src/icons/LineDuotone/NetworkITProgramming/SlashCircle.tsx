@@ -2,26 +2,20 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgSlashCircle = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M13.2939 7.17041L11.9998 12L10.7058 16.8297"
+      stroke="black"
       strokeWidth={1.5}
-      d="M13.294 7.17 12 12l-1.294 4.83"
+      strokeLinecap="round"
     />
     <Circle
+      opacity={0.5}
       cx={12}
       cy={12}
       r={10}
-      stroke="#000"
+      stroke="black"
       strokeWidth={1.5}
-      opacity={0.5}
     />
   </Svg>
 );

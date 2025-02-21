@@ -2,24 +2,24 @@ import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgCameraMinimalistic = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <Circle cx={12} cy={13} r={3} stroke="#000" strokeWidth={1.5} />
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <Circle cx={12} cy={13} r={3} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
+      d="M9.99998 19.9999H14C16.8089 19.9999 18.2134 19.9999 19.2223 19.3258C19.659 19.0339 20.034 18.6589 20.3259 18.2222C21 17.2133 21 15.8088 21 12.9999C21 10.191 20.9998 8.78673 20.3257 7.77783C20.0339 7.34107 19.6589 6.96607 19.2221 6.67423C18.2132 6.00011 16.8088 6.00011 13.9998 6.00011H9.99983C7.1909 6.00011 5.78644 6.00011 4.77755 6.67423C4.34079 6.96607 3.96578 7.34107 3.67395 7.77783C2.99998 8.7865 2.99998 10.1903 2.99998 12.998L2.99998 12.9999C2.99998 15.8088 2.99998 17.2133 3.6741 18.2222C3.96593 18.6589 4.34094 19.0339 4.7777 19.3258C5.78659 19.9999 7.19105 19.9999 9.99998 19.9999Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M10 20h4c2.809 0 4.213 0 5.222-.674a4 4 0 0 0 1.104-1.104C21 17.213 21 15.81 21 13s0-4.213-.674-5.222a4 4 0 0 0-1.104-1.104C18.213 6 16.81 6 14 6h-4c-2.81 0-4.214 0-5.222.674a4 4 0 0 0-1.104 1.104C3 8.787 3 10.19 3 12.998V13c0 2.809 0 4.213.674 5.222.292.437.667.812 1.104 1.104C5.787 20 7.19 20 10 20Z"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M18 10H17.5"
+      stroke="black"
       strokeWidth={1.5}
-      d="M18 10h-.5M14.5 3.5h-5"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M14.5 3.5H9.5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

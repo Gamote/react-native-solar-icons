@@ -2,29 +2,47 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgDropperMinimalistic = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M5 8C5 6.11438 5 5.17157 5.58579 4.58579C6.17157 4 7.11438 4 9 4H15C16.8856 4 17.8284 4 18.4142 4.58579C19 5.17157 19 6.11438 19 8V15.8831C19 16.6438 18.6809 17.3697 18.1203 17.8841C14.6584 21.0607 9.3416 21.0607 5.87966 17.8841C5.31911 17.3697 5 16.6438 5 15.8831V12"
+      stroke="black"
       strokeWidth={1.5}
-      d="M5 8c0-1.886 0-2.828.586-3.414S7.114 4 9 4h6c1.886 0 2.828 0 3.414.586S19 6.114 19 8v7.883c0 .76-.32 1.487-.88 2.001a9.053 9.053 0 0 1-12.24 0 2.72 2.72 0 0 1-.88-2V12M19 8h-2M19 14h-2"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M19 8L17 8"
+      stroke="black"
       strokeWidth={1.5}
-      d="M14 11.917c0 1.15-.895 2.083-2 2.083s-2-.933-2-2.083c0-.72.783-1.681 1.37-2.3a.86.86 0 0 1 1.26 0c.587.619 1.37 1.58 1.37 2.3Z"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M19 14H17"
+      stroke="black"
       strokeWidth={1.5}
-      d="M19 11h-2M12 21v1M14 4a2 2 0 1 0-4 0"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M14 11.9167C14 13.0673 13.1046 14 12 14C10.8954 14 10 13.0673 10 11.9167C10 11.1968 10.783 10.2359 11.3691 9.61749C11.7161 9.25136 12.2839 9.25136 12.6309 9.61749C13.217 10.2359 14 11.1968 14 11.9167Z"
+      stroke="black"
+      strokeWidth={1.5}
+    />
+    <Path
+      d="M19 11H17"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M12 21V22"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M14 4C14 2.89543 13.1046 2 12 2C10.8954 2 10 2.89543 10 4"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

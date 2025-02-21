@@ -2,31 +2,31 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgFridge = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M4 10C4 6.22876 4 4.34315 5.17157 3.17157C6.34315 2 8.22876 2 12 2C15.7712 2 17.6569 2 18.8284 3.17157C20 4.34315 20 6.22876 20 10V13C20 16.7712 20 18.6569 18.8284 19.8284C17.6569 21 15.7712 21 12 21C8.22876 21 6.34315 21 5.17157 19.8284C4 18.6569 4 16.7712 4 13V10Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M4 10c0-3.771 0-5.657 1.172-6.828S8.229 2 12 2s5.657 0 6.828 1.172S20 6.229 20 10v3c0 3.771 0 5.657-1.172 6.828S15.771 21 12 21s-5.657 0-6.828-1.172S4 16.771 4 13z"
     />
     <Path
-      stroke="#000"
-      strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M17 21v1h-1v-1m-8 0v1H7v-1"
       opacity={0.5}
-    />
-    <Path stroke="#000" strokeWidth={1.5} d="M20 11.5H4" opacity={0.5} />
-    <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M17 21V22H16V21M8 21V22H7V21"
+      stroke="black"
       strokeWidth={1.5}
-      d="M17 7v2M17 14v2"
+      strokeLinejoin="round"
+    />
+    <Path opacity={0.5} d="M20 11.5H4" stroke="black" strokeWidth={1.5} />
+    <Path
+      d="M17 7L17 9"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M17 14L17 16"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

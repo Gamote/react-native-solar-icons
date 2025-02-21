@@ -2,27 +2,35 @@ import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgConfoundedCircle = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Circle
+      opacity={0.5}
       cx={12}
       cy={12}
       r={10}
-      stroke="#000"
+      stroke="black"
       strokeWidth={1.5}
-      opacity={0.5}
     />
     <Path
-      stroke="#000"
+      d="M8 12L10 10.5L8 9"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
+    />
+    <Path
+      d="M16 12L14 10.5L16 9"
+      stroke="black"
       strokeWidth={1.5}
-      d="m8 12 2-1.5L8 9M16 12l-2-1.5L16 9M15 16l-1-1-1 1-1-1-1 1-1-1-1 1"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <Path
+      d="M15 16L14 15L13 16L12 15L11 16L10 15L9 16"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </Svg>
 );

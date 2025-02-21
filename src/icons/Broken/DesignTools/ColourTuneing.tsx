@@ -2,18 +2,18 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgColourTuneing = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M2 12H9.5M22 12H14.5"
+      stroke="black"
       strokeWidth={1.5}
-      d="M2 12h7.5M22 12h-7.5M20 15.684C20 19 17.735 22 16 22c-1.257 0-2.328-.97-3.032-3M4.144 8.316C4.144 5 6.41 2 8.144 2c2.269 0 3.928 3.158 3.928 10q.002 1.64.123 3"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M20.0002 15.6844C20.0002 19.0002 17.7345 22.0002 16.0002 22.0002C14.7427 22.0002 13.6725 21.03 12.9682 19M4.14404 8.31579C4.14404 5 6.40978 2 8.14404 2C10.4128 2 12.0723 5.15806 12.0723 12.0002C12.0723 13.0935 12.1146 14.0927 12.1951 15"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

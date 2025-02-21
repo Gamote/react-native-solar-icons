@@ -2,18 +2,48 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgDna = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M11.8476 12.1524L12.0462 12.2208C15.3052 13.3428 19.2301 12.2699 22 9.5M11.8476 12.1524L11.2902 11.9606C8.24848 10.9134 4.58525 11.9147 2 14.5M11.8476 12.1524L11.7792 11.9538C10.6572 8.69481 11.7301 4.76991 14.5 2M11.8476 12.1524L12.0394 12.7098C13.0866 15.7515 12.0853 19.4147 9.5 22"
+      stroke="black"
       strokeWidth={1.5}
-      d="m11.848 12.152.198.069c3.26 1.122 7.184.049 9.954-2.721m-10.152 2.652-.558-.191C8.248 10.913 4.585 11.915 2 14.5m9.848-2.348-.069-.198C10.657 8.694 11.73 4.77 14.5 2m-2.652 10.152.191.558c1.048 3.041.046 6.705-2.539 9.29M10 15l1.843 1.922m-5.078-5.079L8 13.08M11.844 6.765 14 9m2 2 .922.843M4 13l3.5 3.5M19.778 10.89l-3.5-3.5M9.305 18.191l1.587 1.587M14.587 5.587 13 4"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M10 15L11.8431 16.9217M6.76465 11.8433L8 13.0786"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M11.8438 6.76465L14 9M16 11L16.9222 11.8431"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M3.99976 13.0002L7.49976 16.5002"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M19.7783 10.8906L16.2783 7.39062"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M9.30469 18.1914L10.8917 19.7784"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M14.5869 5.58691L12.9999 3.99989"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

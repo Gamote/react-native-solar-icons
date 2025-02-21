@@ -2,30 +2,29 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgMonitorSmartphone = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M11 17H8C5.17157 17 3.75736 17 2.87868 16.1213C2 15.2426 2 13.8284 2 11V10C2 6.22876 2 4.34315 3.17157 3.17157C3.64118 2.70197 4.2255 2.4206 5 2.25201M22 8.5C22 6.16537 22 4.99805 21.5277 4.11441C21.1548 3.4167 20.5833 2.84525 19.8856 2.47231C19.0019 2 17.8346 2 15.5 2H10C9.65081 2 9.31779 2 9 2.00093"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M11 17H8c-2.828 0-4.243 0-5.121-.879C2 15.243 2 13.828 2 11v-1c0-3.771 0-5.657 1.172-6.828.47-.47 1.054-.751 1.828-.92M22 8.5c0-2.335 0-3.502-.472-4.386a4 4 0 0 0-1.642-1.642C19.002 2 17.835 2 15.5 2H9"
     />
     <Path
-      stroke="#000"
+      d="M14 15C14 13.1144 14 12.1716 14.5858 11.5858C15.1716 11 16.1144 11 18 11C19.8856 11 20.8284 11 21.4142 11.5858C22 12.1716 22 13.1144 22 15V18C22 19.8856 22 20.8284 21.4142 21.4142C20.8284 22 19.8856 22 18 22C16.1144 22 15.1716 22 14.5858 21.4142C14 20.8284 14 19.8856 14 18V15Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M14 15c0-1.886 0-2.828.586-3.414S16.114 11 18 11s2.828 0 3.414.586S22 13.114 22 15v3c0 1.886 0 2.828-.586 3.414S19.886 22 18 22s-2.828 0-3.414-.586S14 19.886 14 18z"
     />
-    <Path stroke="#000" strokeLinecap="round" strokeWidth={1.5} d="M19 20h-2" />
     <Path
-      fill="#000"
-      d="M11 22v.75a.75.75 0 0 0 .75-.75zm-3-.75a.75.75 0 0 0 0 1.5zM11.75 17a.75.75 0 0 0-1.5 0zM11 21.25H8v1.5h3zm.75.75v-5h-1.5v5z"
+      d="M19 20H17"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
-    <Path stroke="#000" strokeLinecap="round" strokeWidth={1.5} d="M11 13H2" />
+    <Path
+      d="M11 22V22.75C11.4142 22.75 11.75 22.4142 11.75 22H11ZM8 21.25C7.58579 21.25 7.25 21.5858 7.25 22C7.25 22.4142 7.58579 22.75 8 22.75V21.25ZM11.75 17C11.75 16.5858 11.4142 16.25 11 16.25C10.5858 16.25 10.25 16.5858 10.25 17H11.75ZM11 21.25H8V22.75H11V21.25ZM11.75 22V17H10.25V22H11.75Z"
+      fill="black"
+    />
+    <Path d="M11 13H2" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
   </Svg>
 );
 export default SvgMonitorSmartphone;

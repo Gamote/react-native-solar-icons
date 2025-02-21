@@ -2,29 +2,30 @@ import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgUserId = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <Circle cx={9} cy={9} r={2} stroke="#000" strokeWidth={1.5} />
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <Circle cx={9} cy={9} r={2} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
+      d="M13 15C13 16.1046 13 17 9 17C5 17 5 16.1046 5 15C5 13.8954 6.79086 13 9 13C11.2091 13 13 13.8954 13 15Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M13 15c0 1.105 0 2-4 2s-4-.895-4-2 1.79-2 4-2 4 .895 4 2Z"
     />
     <Path
-      stroke="#000"
+      d="M2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12C22 15.7712 22 17.6569 20.8284 18.8284C19.6569 20 17.7712 20 14 20H10C6.22876 20 4.34315 20 3.17157 18.8284C2 17.6569 2 15.7712 2 12Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12s0 5.657-1.172 6.828S17.771 20 14 20h-4c-3.771 0-5.657 0-6.828-1.172S2 15.771 2 12Z"
     />
     <Path
-      stroke="#000"
+      d="M19 12H15"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
+    />
+    <Path d="M19 9H14" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
+    <Path
+      d="M19 15H16"
+      stroke="black"
       strokeWidth={1.5}
-      d="M19 12h-4M19 9h-5M19 15h-3"
+      strokeLinecap="round"
     />
   </Svg>
 );

@@ -2,25 +2,26 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgCardSearch = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M14 4C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12V13M10 4C6.22876 4 4.34315 4 3.17157 5.17157C2 6.34315 2 8.22876 2 12C2 15.7712 2 17.6569 3.17157 18.8284C4.34315 20 6.22876 20 10 20H13"
+      stroke="black"
       strokeWidth={1.5}
-      d="M14 4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12v1M10 4C6.229 4 4.343 4 3.172 5.172S2 8.229 2 12s0 5.657 1.172 6.828S6.229 20 10 20h3M10 16H6"
+      strokeLinecap="round"
     />
-    <Circle cx={18} cy={17} r={3} stroke="#000" strokeWidth={1.5} />
+    <Path d="M10 16H6" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
+    <Circle cx={18} cy={17} r={3} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M20.5 19.5L21.5 20.5"
+      stroke="black"
       strokeWidth={1.5}
-      d="m20.5 19.5 1 1M2 10h5m15 0H11"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M2 10L7 10M22 10L11 10"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

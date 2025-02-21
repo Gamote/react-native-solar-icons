@@ -2,26 +2,20 @@ import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgVinyl = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <Circle cx={12} cy={12} r={3} stroke="#000" strokeWidth={1.5} />
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <Circle cx={12} cy={12} r={3} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M21.9506 13.0004C21.4489 18.0538 17.1853 22.0004 12 22.0004C6.47715 22.0004 2 17.5233 2 12.0004C2 10.179 2.48697 8.4713 3.33782 7.00043M11 2.0498C9.55385 2.19339 8.19833 2.64506 7 3.33825"
+      stroke="black"
       strokeWidth={1.5}
-      d="M21.95 13c-.501 5.054-4.765 9-9.95 9-5.523 0-10-4.477-10-10 0-1.821.487-3.529 1.338-5M11 2.05a9.9 9.9 0 0 0-4 1.288"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M15 11.9992V2.45703C18.1101 3.43385 20.5654 5.88916 21.5422 8.99923"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M15 12V2.456a10.02 10.02 0 0 1 6.542 6.542"
     />
   </Svg>
 );

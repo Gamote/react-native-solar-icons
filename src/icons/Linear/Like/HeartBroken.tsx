@@ -2,19 +2,13 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgHeartBroken = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M12 5.50088C7.50016 0.825708 2 4.27441 2 9.13734C2 14.0003 6.01943 16.5917 8.96173 18.9111C10 19.7296 11 20.5002 12 20.5002M12 5.50088C16.4998 0.825708 22 4.27441 22 9.13734C22 14.0003 17.9806 16.5917 15.0383 18.9111C14 19.7296 13 20.5002 12 20.5002M12 5.50088L10.5 8.50024L14 11.0002L11 14.5002L13 16.5002L12 20.5002"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M12 5.5C7.5.827 2 4.275 2 9.138s4.02 7.455 6.962 9.774C10 19.73 11 20.501 12 20.501m0-15C16.5.826 22 4.274 22 9.137s-4.02 7.455-6.962 9.774C14 19.73 13 20.501 12 20.501m0-15-1.5 3L14 11l-3 3.5 2 2-1 4"
     />
   </Svg>
 );

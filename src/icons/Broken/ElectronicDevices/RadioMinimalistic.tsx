@@ -2,25 +2,37 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgRadioMinimalistic = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M22 14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14C2 10.2288 2 8.34315 3.17157 7.17157C4.34315 6 6.22876 6 10 6H14C17.7712 6 19.6569 6 20.8284 7.17157C21.4816 7.82475 21.7706 8.69989 21.8985 10"
+      stroke="black"
       strokeWidth={1.5}
-      d="M22 14c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14s0-5.657 1.172-6.828S6.229 6 10 6h4c3.771 0 5.657 0 6.828 1.172.654.653.943 1.528 1.07 2.828"
+      strokeLinecap="round"
     />
-    <Circle cx={8} cy={14} r={3} stroke="#000" strokeWidth={1.5} />
+    <Circle cx={8} cy={14} r={3} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M13.5 11H19"
+      stroke="black"
       strokeWidth={1.5}
-      d="M13.5 11H19M13.5 14h.5m5 0h-2.5M16 17h-2.5m5.5 0h-.5M6.5 6 15 2"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M13.5 14H14M19 14H16.5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M16 17H13.5M19 17H18.5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M6.5 6L15 2"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

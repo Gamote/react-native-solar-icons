@@ -2,19 +2,13 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgArrowToDownLeft = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M12 19.5L17 14.5M12 19.5L7 14.5M12 19.5L12 13M12 9.5C12 7.83333 11 4.5 7 4.5"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="m12 19.5 5-5m-5 5-5-5m5 5V13m0-3.5c0-1.667-1-5-5-5"
     />
   </Svg>
 );

@@ -2,47 +2,48 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgCloset = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M19 22v-.5M5 22v-.5"
       opacity={0.5}
+      d="M19 22V21.5M5 22V21.5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
-    <Path stroke="#000" strokeLinecap="round" strokeWidth={1.5} d="M12 21V2" />
+    <Path d="M12 21V2" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M15 8v2"
       opacity={0.5}
+      d="M15 8V10"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M2 10C2 6.22876 2 4.34315 3.17157 3.17157C4.34315 2 6.22876 2 10 2H14C17.7712 2 19.6569 2 20.8284 3.17157C22 4.34315 22 6.22876 22 10V13C22 16.7712 22 18.6569 20.8284 19.8284C19.6569 21 17.7712 21 14 21H10C6.22876 21 4.34315 21 3.17157 19.8284C2 18.6569 2 16.7712 2 13V10Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M2 10c0-3.771 0-5.657 1.172-6.828S6.229 2 10 2h4c3.771 0 5.657 0 6.828 1.172S22 6.229 22 10v3c0 3.771 0 5.657-1.172 6.828S17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172S2 16.771 2 13z"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M2 8h10"
       opacity={0.5}
+      d="M2 8H12"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
-    <Path stroke="#000" strokeLinecap="round" strokeWidth={1.5} d="M2 15h20" />
+    <Path d="M2 15H22" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M15 18h2M7 18h2"
       opacity={0.5}
+      d="M15 18L17 18"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      opacity={0.5}
+      d="M7 18L9 18"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

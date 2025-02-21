@@ -2,32 +2,37 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgUfo2 = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M17 7.21094C19.989 7.93258 22 9.28138 22 10.8262C22 13.1313 17.5228 14.9999 12 14.9999C6.47715 14.9999 2 13.1313 2 10.8262C2 9.28138 4.01099 7.93258 7 7.21094"
+      stroke="black"
       strokeWidth={1.5}
-      d="M17 7.21c2.989.723 5 2.071 5 3.616C22 13.131 17.523 15 12 15S2 13.13 2 10.826c0-1.545 2.011-2.893 5-3.615"
     />
     <Path
+      d="M7 7.72876C7 5.11714 9.11714 3 11.7288 3H12.2712C14.8829 3 17 5.11714 17 7.72876C17 7.90601 16.9458 8.07918 16.8003 8.18039C16.3862 8.4684 15.1898 9 12 9C8.81016 9 7.6138 8.4684 7.19972 8.18039C7.0542 8.07918 7 7.90601 7 7.72876Z"
       stroke="#8E93A6"
       strokeWidth={1.5}
-      d="M7 7.729A4.73 4.73 0 0 1 11.729 3h.542A4.73 4.73 0 0 1 17 7.729c0 .177-.054.35-.2.451-.414.288-1.61.82-4.8.82s-4.386-.532-4.8-.82c-.146-.1-.2-.274-.2-.451Z"
     />
     <Circle cx={12} cy={12} r={1} fill="#8E93A6" />
-    <Circle cx={7} cy={11} r={1} fill="#000" />
-    <Circle cx={17} cy={11} r={1} fill="#000" />
-    <Path stroke="#000" strokeLinecap="round" strokeWidth={1.5} d="M12 21v-3" />
+    <Circle cx={7} cy={11} r={1} fill="black" />
+    <Circle cx={17} cy={11} r={1} fill="black" />
     <Path
-      stroke="#8E93A6"
-      strokeLinecap="round"
+      d="M12 21V18"
+      stroke="black"
       strokeWidth={1.5}
-      d="M18 20v-3M6 20v-3"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M18 20V17"
+      stroke="#8E93A6"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M6 20V17"
+      stroke="#8E93A6"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

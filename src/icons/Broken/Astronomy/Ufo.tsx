@@ -2,22 +2,34 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgUfo = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M2.73145 10C3.60699 9.25047 5.00469 8.62664 6.72703 8.21094M2.73145 13.6524C4.35491 15.0423 7.77368 15.9999 11.7285 15.9999C17.253 15.9999 21.7314 14.1313 21.7314 11.8262C21.7314 10.6587 20.5826 9.60321 18.7308 8.84573C18.1323 8.6009 17.4603 8.38721 16.73 8.21094M11.7287 10C8.53794 10 7.34123 9.4684 6.92702 9.18039C6.78146 9.07918 6.72725 8.90601 6.72725 8.72876C6.72725 6.11714 8.84501 4 11.4574 4H12C14.6124 4 16.7302 6.11714 16.7302 8.72876C16.7302 8.90601 16.6757 9.07943 16.5301 9.18061C16.249 9.37597 15.608 9.68323 14.2295 9.86075"
+      stroke="black"
       strokeWidth={1.5}
-      d="M2.731 10c.876-.75 2.274-1.373 3.996-1.79m-3.996 5.442C4.355 15.042 7.774 16 11.73 16c5.524 0 10.002-1.869 10.002-4.174 0-1.167-1.148-2.223-3-2.98a14 14 0 0 0-2.001-.635M11.729 10c-3.191 0-4.388-.532-4.802-.82-.146-.1-.2-.274-.2-.451A4.73 4.73 0 0 1 11.457 4H12a4.73 4.73 0 0 1 4.73 4.729c0 .177-.054.35-.2.452-.281.195-.922.502-2.3.68M12 16v3M5.5 15.5l-1 2M18.5 15.5l1 2"
+      strokeLinecap="round"
     />
-    <Circle cx={12} cy={13} r={1} fill="#000" />
-    <Circle cx={7} cy={12} r={1} fill="#000" />
-    <Circle cx={17} cy={12} r={1} fill="#000" />
+    <Path
+      d="M12 16V19"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M5.50036 15.5L4.5 17.5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M18.4996 15.5L19.5 17.5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Circle cx={12} cy={13} r={1} fill="black" />
+    <Circle cx={7} cy={12} r={1} fill="black" />
+    <Circle cx={17} cy={12} r={1} fill="black" />
   </Svg>
 );
 export default SvgUfo;

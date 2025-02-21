@@ -2,18 +2,24 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgHamburgerMenu = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M4 7L7 7M20 7L11 7"
+      stroke="black"
       strokeWidth={1.5}
-      d="M4 7h3m13 0h-9M20 17h-3M4 17h9M4 12h16"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M20 17H17M4 17L13 17"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M4 12H7L20 12"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

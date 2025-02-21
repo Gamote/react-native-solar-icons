@@ -2,33 +2,34 @@ import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgAlarmTurnOff = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Circle
+      opacity={0.5}
       cx={12}
       cy={13}
       r={9}
-      stroke="#000"
+      stroke="black"
       strokeWidth={1.5}
-      opacity={0.5}
     />
     <Path
-      stroke="#000"
+      d="M14.1213 15.1213L12 13M12 13L9.87866 10.8787M12 13L14.1213 10.8787M12 13L9.87868 15.1213"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M14.121 15.121 12 13m0 0-2.121-2.121M12 13l2.121-2.121M12 13l-2.121 2.121"
     />
     <Path
-      stroke="#000"
+      d="M3.5 4.5L7.50002 2"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
+    />
+    <Path
+      d="M20.5 4.5L16.5 2"
+      stroke="black"
       strokeWidth={1.5}
-      d="m3.5 4.5 4-2.5M20.5 4.5l-4-2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </Svg>
 );

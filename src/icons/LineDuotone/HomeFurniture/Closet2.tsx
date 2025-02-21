@@ -2,32 +2,33 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgCloset2 = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M19 22v-1.5M5 22v-1.5"
       opacity={0.5}
+      d="M19 22V20.5M5 22V20.5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
-    <Path stroke="#000" strokeLinecap="round" strokeWidth={1.5} d="M12 20V2" />
+    <Path d="M12 20V2" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M15 9v4M9 9v4"
       opacity={0.5}
+      d="M15 9V13"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      opacity={0.5}
+      d="M9 9V13"
+      stroke="black"
       strokeWidth={1.5}
-      d="M2 10c0-3.771 0-5.657 1.172-6.828S6.229 2 10 2h4c3.771 0 5.657 0 6.828 1.172S22 6.229 22 10v2c0 3.771 0 5.657-1.172 6.828S17.771 20 14 20h-4c-3.771 0-5.657 0-6.828-1.172S2 15.771 2 12z"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M2 10C2 6.22876 2 4.34315 3.17157 3.17157C4.34315 2 6.22876 2 10 2H14C17.7712 2 19.6569 2 20.8284 3.17157C22 4.34315 22 6.22876 22 10V12C22 15.7712 22 17.6569 20.8284 18.8284C19.6569 20 17.7712 20 14 20H10C6.22876 20 4.34315 20 3.17157 18.8284C2 17.6569 2 15.7712 2 12V10Z"
+      stroke="black"
+      strokeWidth={1.5}
     />
   </Svg>
 );

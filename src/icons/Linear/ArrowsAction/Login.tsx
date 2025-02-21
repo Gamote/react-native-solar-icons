@@ -2,25 +2,19 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgLogin = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4"
+      stroke="black"
       strokeWidth={1.5}
-      d="M12 20a8 8 0 1 0 0-16"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M4 12H14M14 12L11 9M14 12L11 15"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M4 12h10m0 0-3-3m3 3-3 3"
     />
   </Svg>
 );

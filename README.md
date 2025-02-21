@@ -54,6 +54,7 @@
   npx @svgr/cli \
     --native \
     --typescript \
+    --svgo-config ./svgo.config.json \
     --filename-case pascal \
     --out-dir src/icons \
     original/icons/SVG

@@ -2,20 +2,21 @@ import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgRoundTransferDiagonal = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <Circle cx={12} cy={12} r={10} stroke="#000" strokeWidth={1.5} />
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <Circle cx={12} cy={12} r={10} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
+      d="M6.50006 4L13.8785 12V7.5"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
+    />
+    <Path
+      d="M17.3784 19.8779L9.87842 11.9995V16.4995"
+      stroke="black"
       strokeWidth={1.5}
-      d="m6.5 4 7.379 8V7.5M17.378 19.878l-7.5-7.879v4.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </Svg>
 );

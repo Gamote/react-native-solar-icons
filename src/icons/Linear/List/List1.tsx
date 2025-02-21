@@ -2,19 +2,20 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgList1 = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M20 7L4 7"
+      stroke="black"
       strokeWidth={1.5}
-      d="M20 7H4M15 12H4M9 17H4"
+      strokeLinecap="round"
     />
+    <Path
+      d="M15 12L4 12"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path d="M9 17H4" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
   </Svg>
 );
 export default SvgList1;

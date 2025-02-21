@@ -2,25 +2,19 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgScale = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M11.0002 2C6.94512 2.0073 4.82168 2.10686 3.46465 3.46389C2.00018 4.92835 2.00018 7.28538 2.00018 11.9994C2.00018 16.7135 2.00018 19.0705 3.46465 20.535C4.92912 21.9994 7.28614 21.9994 12.0002 21.9994C16.7142 21.9994 19.0713 21.9994 20.5357 20.535C21.8927 19.1779 21.9923 17.0545 21.9996 12.9994"
+      stroke="black"
       strokeWidth={1.5}
-      d="M11 2c-4.055.007-6.178.107-7.535 1.464C2 4.928 2 7.285 2 11.999s0 7.071 1.465 8.536c1.464 1.464 3.821 1.464 8.535 1.464s7.071 0 8.536-1.464c1.357-1.357 1.456-3.48 1.464-7.536"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M13 11L22 2M22 2H16.6562M22 2V7.34375M21 3L12 12M12 12H16M12 12V8"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="m13 11 9-9m0 0h-5.344M22 2v5.344M21 3l-9 9m0 0h4m-4 0V8"
     />
   </Svg>
 );

@@ -2,20 +2,20 @@ import * as React from "react";
 import Svg, { Circle, Ellipse, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgUserSpeakRounded = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <Circle cx={10} cy={6} r={4} stroke="#000" strokeWidth={1.5} />
-    <Ellipse cx={10} cy={17} stroke="#000" strokeWidth={1.5} rx={7} ry={4} />
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <Circle cx={10} cy={6} r={4} stroke="black" strokeWidth={1.5} />
+    <Ellipse cx={10} cy={17} rx={7} ry={4} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10"
+      stroke="black"
       strokeWidth={1.5}
-      d="M19 2s2 1.2 2 4-2 4-2 4M17 4s1 .6 1 2-1 2-1 2"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

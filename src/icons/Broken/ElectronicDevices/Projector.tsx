@@ -2,36 +2,34 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgProjector = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M18 6.01732C19.5534 6.06413 20.48 6.23738 21.1213 6.87868C21.6112 7.36857 21.828 8.02491 21.9239 9M10 6H8C5.17157 6 3.75736 6 2.87868 6.87868C2 7.75736 2 9.17157 2 12C2 14.8284 2 16.2426 2.87868 17.1213C3.75736 18 5.17157 18 8 18H10M14 18H16C18.8284 18 20.2426 18 21.1213 17.1213C21.8897 16.3529 21.9862 15.175 21.9983 13"
+      stroke="black"
       strokeWidth={1.5}
-      d="M18 6.017c1.553.047 2.48.22 3.121.862.49.49.707 1.146.803 2.121M10 6H8c-2.828 0-4.243 0-5.121.879C2 7.757 2 9.172 2 12s0 4.243.879 5.121C3.757 18 5.172 18 8 18h2m4 0h2c2.828 0 4.243 0 5.121-.879.769-.768.865-1.946.877-4.121"
-    />
-    <Path
-      fill="#000"
-      d="M18.33 20.335a.75.75 0 1 0 1.34-.67zm-1-2 1 2 1.34-.67-1-2zM5.67 20.335a.75.75 0 1 1-1.34-.67zm1-2-1 2-1.34-.67 1-2z"
-    />
-    <Circle cx={14} cy={9} r={5} stroke="#000" strokeWidth={1.5} />
-    <Path
-      stroke="#000"
       strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M12 9a2 2 0 1 0 2-2"
     />
     <Path
-      stroke="#000"
+      d="M18.3292 20.3354C18.5144 20.7059 18.9649 20.8561 19.3354 20.6708C19.7059 20.4856 19.8561 20.0351 19.6708 19.6646L18.3292 20.3354ZM17.3292 18.3354L18.3292 20.3354L19.6708 19.6646L18.6708 17.6646L17.3292 18.3354Z"
+      fill="black"
+    />
+    <Path
+      d="M5.67082 20.3354C5.48558 20.7059 5.03507 20.8561 4.66459 20.6708C4.29411 20.4856 4.14394 20.0351 4.32918 19.6646L5.67082 20.3354ZM6.67082 18.3354L5.67082 20.3354L4.32918 19.6646L5.32918 17.6646L6.67082 18.3354Z"
+      fill="black"
+    />
+    <Circle cx={14} cy={9} r={5} stroke="black" strokeWidth={1.5} />
+    <Path
+      d="M12 9C12 10.1046 12.8954 11 14 11C15.1046 11 16 10.1046 16 9C16 7.89543 15.1046 7 14 7"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M5.5 9.5L5.5002 11.0001"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M5.5 9.5V11"
     />
   </Svg>
 );

@@ -2,36 +2,47 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgBoombox = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M6 9.5H18"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M6 9.5h12"
     />
     <Path
-      stroke="#000"
+      d="M2 14C2 10.2288 2 8.34315 3.17157 7.17157C4.34315 6 6.22876 6 10 6H14C17.7712 6 19.6569 6 20.8284 7.17157C22 8.34315 22 10.2288 22 14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M2 14c0-3.771 0-5.657 1.172-6.828S6.229 6 10 6h4c3.771 0 5.657 0 6.828 1.172S22 10.229 22 14s0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14ZM16 6c0-1.886 0-2.828-.586-3.414S13.886 2 12 2s-2.828 0-3.414.586S8 4.114 8 6"
     />
     <Path
-      stroke="#000"
+      d="M16 6C16 4.11438 16 3.17157 15.4142 2.58579C14.8284 2 13.8856 2 12 2C10.1144 2 9.17157 2 8.58579 2.58579C8 3.17157 8 4.11438 8 6"
+      stroke="black"
       strokeWidth={1.5}
-      d="M11 16a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM18.121 18.121a3 3 0 1 1-4.242-4.242 3 3 0 0 1 4.242 4.242Z"
     />
     <Path
-      stroke="#000"
+      d="M11 16C11 17.6569 9.65685 19 8 19C6.34315 19 5 17.6569 5 16C5 14.3431 6.34315 13 8 13C9.65685 13 11 14.3431 11 16Z"
+      stroke="black"
+      strokeWidth={1.5}
+    />
+    <Path
+      d="M18.1213 18.1213C16.9497 19.2929 15.0503 19.2929 13.8787 18.1213C12.7071 16.9497 12.7071 15.0503 13.8787 13.8787C15.0503 12.7071 16.9497 12.7071 18.1213 13.8787C19.2929 15.0503 19.2929 16.9497 18.1213 18.1213Z"
+      stroke="black"
+      strokeWidth={1.5}
+    />
+    <Path
+      d="M8 13V15"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
+    />
+    <Path
+      d="M18.1213 13.8789L16.7071 15.2931"
+      stroke="black"
       strokeWidth={1.5}
-      d="M8 13v2M18.121 13.879l-1.414 1.414"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </Svg>
 );

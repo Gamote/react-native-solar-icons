@@ -2,29 +2,35 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgBanknote2 = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M13 5C15.8284 5 17.2426 5 18.1213 5.87868C19 6.75736 19 8.17157 19 11C19 13.8284 19 15.2426 18.1213 16.1213C17.2426 17 15.8284 17 13 17H8C5.17157 17 3.75736 17 2.87868 16.1213C2 15.2426 2 13.8284 2 11C2 8.17157 2 6.75736 2.87868 5.87868C3.75736 5 5.17157 5 8 5H9"
+      stroke="black"
       strokeWidth={1.5}
-      d="M13 5c2.828 0 4.243 0 5.121.879C19 6.757 19 8.172 19 11s0 4.243-.879 5.121C17.243 17 15.828 17 13 17H8c-2.828 0-4.243 0-5.121-.879C2 15.243 2 13.828 2 11s0-4.243.879-5.121C3.757 5 5.172 5 8 5h1M16 20h-5c-2.828 0-4.242 0-5.121-.879-.49-.49-.707-1.146-.803-2.121m16.046 2.121c.878-.878.878-2.293.878-5.12 0-2.83 0-4.244-.878-5.122-.49-.49-1.147-.707-2.122-.803"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M16.0003 20.0001H11.0003C8.17187 20.0001 6.75766 20.0001 5.87898 19.1214C5.38909 18.6315 5.17233 17.9751 5.07642 17M21.1216 19.1214C22.0003 18.2427 22.0003 16.8285 22.0003 14.0001C22.0003 11.1716 22.0003 9.75741 21.1216 8.87873C20.6317 8.38885 19.9754 8.17208 19.0003 8.07617"
+      stroke="black"
       strokeWidth={1.5}
-      d="M13 11a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M13 11C13 12.3807 11.8807 13.5 10.5 13.5C9.11929 13.5 8 12.3807 8 11C8 9.61929 9.11929 8.5 10.5 8.5C11.8807 8.5 13 9.61929 13 11Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M16 13V9M5 13V9"
+    />
+    <Path
+      d="M16 13L16 9"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M5 13L5 9"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

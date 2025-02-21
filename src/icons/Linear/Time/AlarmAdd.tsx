@@ -2,26 +2,27 @@ import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgAlarmAdd = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <Circle cx={12} cy={13} r={9} stroke="#000" strokeWidth={1.5} />
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <Circle cx={12} cy={13} r={9} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M15 13L12 13M12 13L9 13M12 13L12 10M12 13L12 16"
+      stroke="black"
       strokeWidth={1.5}
-      d="M15 13h-3m0 0H9m3 0v-3m0 3v3"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M3.5 4.5L7.50002 2"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
+    />
+    <Path
+      d="M20.5 4.5L16.5 2"
+      stroke="black"
       strokeWidth={1.5}
-      d="m3.5 4.5 4-2.5M20.5 4.5l-4-2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </Svg>
 );

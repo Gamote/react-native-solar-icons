@@ -2,28 +2,34 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgSkateboarding = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M3 17L4.20414 18.3379C4.58342 18.7594 5.12375 19 5.69073 19H10M21 17L19.7959 18.3379C19.4166 18.7594 18.8762 19 18.3093 19H14"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="m3 17 1.204 1.338A2 2 0 0 0 5.691 19H10m11-2-1.204 1.338a2 2 0 0 1-1.487.662H14"
     />
-    <Circle cx={7} cy={21} r={1} fill="#000" />
-    <Circle cx={17} cy={21} r={1} fill="#000" />
-    <Circle cx={19} cy={4} r={2} stroke="#000" strokeWidth={1.5} />
+    <Circle cx={7} cy={21} r={1} fill="black" />
+    <Circle cx={17} cy={21} r={1} fill="black" />
+    <Circle cx={19} cy={4} r={2} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M15 16.4999V15.2491C15 15.1652 15 15.1233 14.999 15.0838C14.9732 14.1057 14.4721 13.2016 13.6563 12.6614C13.6234 12.6396 13.5842 12.6151 13.5057 12.566C13.4089 12.5055 13.3604 12.4752 13.3291 12.454C12.241 11.7153 12.1498 10.1456 13.145 9.28581C13.1735 9.26111 13.2125 9.22996 13.2903 9.1677L13.7358 8.81128C14.7607 7.99138 14.5413 6.37478 13.3349 5.85776C12.8119 5.63361 12.2123 5.67979 11.7297 5.98137L8.5 7.99995"
+      stroke="black"
       strokeWidth={1.5}
-      d="M15 16.5v-1.25l-.001-.166a3 3 0 0 0-1.343-2.423l-.15-.095c-.097-.06-.146-.09-.177-.112a2 2 0 0 1-.184-3.168c.029-.025.068-.056.145-.118l.446-.357a1.737 1.737 0 0 0-2.006-2.83L8.5 8M7 15.5h.379c1.358 0 2.66-.54 3.621-1.5M16.5 10a8.25 8.25 0 0 0 4 0"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M7 15.5H7.37868C8.73694 15.5 10.0396 14.9604 11 14"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M16.5 10C17.8131 10.3283 19.1869 10.3283 20.5 10"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

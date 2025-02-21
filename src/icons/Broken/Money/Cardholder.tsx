@@ -2,24 +2,25 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgCardholder = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8"
+      stroke="black"
       strokeWidth={1.5}
-      d="M22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12s0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464c.974.974 1.3 2.343 1.41 4.536"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M17 10.9996V9.99956C17 8.11394 17 7.17113 16.4142 6.58535C15.9427 6.1138 15.2398 6.02184 14 6.00391M7 10.9996V9.99956C7 8.11394 7 7.17113 7.58579 6.58535C8.05733 6.1138 8.76022 6.02184 10 6.00391"
+      stroke="black"
       strokeWidth={1.5}
-      d="M17 11v-1c0-1.886 0-2.829-.586-3.415-.471-.471-1.174-.563-2.414-.581M7 11v-1c0-1.886 0-2.829.586-3.415.471-.471 1.174-.563 2.414-.581M5 11h14M8 16h1m7 0h-4"
+      strokeLinecap="round"
+    />
+    <Path d="M5 11H19" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
+    <Path
+      d="M8 16H9M16 16H12"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

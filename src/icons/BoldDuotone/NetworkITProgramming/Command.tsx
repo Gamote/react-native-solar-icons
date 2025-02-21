@@ -2,24 +2,26 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgCommand = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      fill="#000"
-      d="M16 16h3a3 3 0 1 1-3 3.001zM5 16l3 .001v3a3 3 0 1 1-3-3"
+      d="M16 16L19 16.0005C20.6569 16.0002 22.0002 17.3432 22.0005 19C22.0007 20.6569 20.6578 22.0002 19.0009 22.0005C17.3441 22.0007 16.0007 20.6578 16.0005 19.001L16 16Z"
+      fill="black"
     />
     <Path
-      fill="#000"
+      d="M5.00047 16.0005L8.00047 16.001L8 19.001C7.99974 20.6578 6.65638 22.0007 4.99953 22.0005C3.34267 22.0002 1.99974 20.6569 2 19C2.00026 17.3432 3.34362 16.0002 5.00047 16.0005Z"
+      fill="black"
+    />
+    <Path
       fillRule="evenodd"
-      d="M19 8h-3V5a3 3 0 1 1 3 3M8 8V5a3 3 0 1 0-3 3z"
       clipRule="evenodd"
+      d="M19 8.00049L16 8.00002L16.0005 5.00002C16.0007 3.34316 17.3441 2.00023 19.0009 2.00049C20.6578 2.00075 22.0007 3.34411 22.0005 5.00096C22.0002 6.65781 20.6569 8.00075 19 8.00049ZM8.00047 8L8 5.00002C7.99974 3.34316 6.65638 2.00023 4.99953 2.00049C3.34267 2.00075 1.99974 3.34411 2 5.00096C2.00026 6.65781 3.34362 8.00075 5.00047 8.00049L8.00047 8Z"
+      fill="black"
     />
-    <Path fill="#000" d="M16 8H8v8h8z" opacity={0.5} />
+    <Path
+      opacity={0.5}
+      d="M16 8.00002L8.00047 8L8 16H16V8.00002Z"
+      fill="black"
+    />
   </Svg>
 );
 export default SvgCommand;

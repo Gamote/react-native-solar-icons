@@ -2,21 +2,15 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgBluetoothCircle = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="m11 12 3.2-2.407c.533-.401.8-.602.8-.875 0-.274-.267-.475-.8-.876l-1.454-1.094c-.762-.573-1.143-.86-1.444-.708C11 6.191 11 6.669 11 7.623zm0 0v4.377c0 .954 0 1.432.302 1.583.301.151.682-.135 1.444-.708l1.454-1.094c.533-.402.8-.602.8-.876 0-.273-.267-.474-.8-.875zm0 0L8 9.5m3 2.5-3 2.5"
       opacity={0.5}
+      d="M11 12L14.2 9.5929C14.7333 9.19171 15 8.99112 15 8.71759C15 8.44405 14.7333 8.24346 14.2 7.84228L12.7455 6.74814C11.9838 6.17524 11.603 5.88879 11.3015 6.04C11 6.1912 11 6.66862 11 7.62345V12ZM11 12V16.3766C11 17.3314 11 17.8088 11.3015 17.96C11.603 18.1112 11.9838 17.8248 12.7455 17.2519L14.2 16.1577C14.7333 15.7565 15 15.5559 15 15.2824C15 15.0089 14.7333 14.8083 14.2 14.4071L11 12ZM11 12L8 9.5M11 12L8 14.5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
-    <Circle cx={12} cy={12} r={10} stroke="#000" strokeWidth={1.5} />
+    <Circle cx={12} cy={12} r={10} stroke="black" strokeWidth={1.5} />
   </Svg>
 );
 export default SvgBluetoothCircle;

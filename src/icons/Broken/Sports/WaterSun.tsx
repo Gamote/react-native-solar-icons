@@ -2,32 +2,51 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgWaterSun = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M22 16.7723C20.4123 16.3982 19.5955 15.4791 18.9199 14.4569C18.4965 13.8163 17.5655 13.8553 17.1055 14.4701C16.0541 15.8757 14.4844 16.9999 12 16.9999C9.49345 16.9999 7.91806 15.5695 6.86651 14.2234C6.42721 13.6611 5.58617 13.6686 5.20168 14.2697C4.50078 15.3655 3.68402 16.3755 2 16.7723"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M22 16.772c-1.588-.374-2.404-1.293-3.08-2.315-.424-.64-1.355-.602-1.815.013C16.055 15.876 14.485 17 12 17c-2.507 0-4.082-1.43-5.133-2.777-.44-.562-1.28-.554-1.665.047C4.5 15.366 3.684 16.375 2 16.772"
     />
     <Path
-      stroke="#000"
+      d="M17.9171 11C17.441 8.16229 14.973 6 12 6C9.02705 6 6.55909 8.16229 6.08301 11"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
+    />
+    <Path d="M12 2V3" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
+    <Path
+      d="M22 12L21 12"
+      stroke="black"
       strokeWidth={1.5}
-      d="M17.917 11a6.002 6.002 0 0 0-11.834 0M12 2v1M22 12h-1M3 12H2M19.07 4.93l-.393.392M5.322 5.322l-.393-.393"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M3 12L2 12"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M19.0703 4.9292L18.6775 5.32204"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M5.32227 5.32178L4.92943 4.92894"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M12 22C9.49345 22 7.91806 20.6547 6.86651 19.3888C6.42721 18.8599 5.58617 18.867 5.20168 19.4323C4.50078 20.4629 3.68402 21.4127 2 21.7859M22 21.7859C20.4123 21.4341 19.5955 20.5697 18.9199 19.6083C18.4965 19.0059 17.5655 19.0425 17.1055 19.6208C16.6953 20.1365 16.2063 20.6119 15.6148 21"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M12 22c-2.507 0-4.082-1.345-5.133-2.611-.44-.53-1.28-.522-1.665.043-.701 1.03-1.518 1.98-3.202 2.354m20 0c-1.588-.352-2.404-1.216-3.08-2.178-.424-.602-1.355-.566-1.815.013-.41.516-.899.99-1.49 1.379"
     />
   </Svg>
 );

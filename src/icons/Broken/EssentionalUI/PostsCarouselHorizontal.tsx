@@ -2,18 +2,24 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgPostsCarouselHorizontal = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M22 19H21.5C20.1193 19 19 17.8807 19 16.5L19 7.5C19 6.11929 20.1193 5 21.5 5L22 5"
+      stroke="black"
       strokeWidth={1.5}
-      d="M22 19h-.5a2.5 2.5 0 0 1-2.5-2.5v-9A2.5 2.5 0 0 1 21.5 5h.5M2 19h.5A2.5 2.5 0 0 0 5 16.5v-9A2.5 2.5 0 0 0 2.5 5H2M15 5.126c.387.084.68.225.914.46.586.585.586 1.528.586 3.414v6c0 1.885 0 2.828-.586 3.414S14.385 19 12.5 19h-1c-1.886 0-2.829 0-3.414-.586C7.5 17.828 7.5 16.885 7.5 15V9c0-1.886 0-2.829.586-3.414C8.617 5.054 9.443 5.005 11 5"
+      strokeLinecap="round"
+    />
+    <Path
+      d="M2 19H2.5C3.88071 19 5 17.8807 5 16.5L5 7.5C5 6.11929 3.88071 5 2.5 5L2 5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M14.9998 5.12576C15.387 5.21006 15.6792 5.35074 15.914 5.58554C16.4998 6.17133 16.4998 7.11414 16.4998 8.99976L16.4998 14.9998C16.4998 16.8854 16.4998 17.8282 15.914 18.414C15.3282 18.9998 14.3854 18.9998 12.4998 18.9998L11.4998 18.9998C9.61414 18.9998 8.67133 18.9998 8.08554 18.414C7.49976 17.8282 7.49976 16.8854 7.49976 14.9998L7.49976 8.99976C7.49976 7.11414 7.49976 6.17133 8.08554 5.58554C8.61709 5.054 9.4426 5.00478 10.9998 5.00022"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

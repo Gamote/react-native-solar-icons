@@ -2,18 +2,32 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgBedsideTable4 = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M19 22V20.5M5 22V20.5"
+      stroke="black"
       strokeWidth={1.5}
-      d="M19 22v-1.5M5 22v-1.5M12 20V8M15 12v3M9 12v3M12 2h-2C6.229 2 4.343 2 3.172 3.172S2 6.229 2 10v2c0 3.771 0 5.657 1.172 6.828S6.229 20 10 20h4c3.771 0 5.657 0 6.828-1.172S22 15.771 22 12v-2c0-3.771 0-5.657-1.172-6.828-.943-.944-2.348-1.127-4.828-1.163M2 8h3m17 0H9"
+      strokeLinecap="round"
+    />
+    <Path d="M12 20V8" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
+    <Path
+      d="M15 12V15"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path d="M9 12V15" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
+    <Path
+      d="M12 2H10C6.22876 2 4.34315 2 3.17157 3.17157C2 4.34315 2 6.22876 2 10V12C2 15.7712 2 17.6569 3.17157 18.8284C4.34315 20 6.22876 20 10 20H14C17.7712 20 19.6569 20 20.8284 18.8284C22 17.6569 22 15.7712 22 12V10C22 6.22876 22 4.34315 20.8284 3.17157C19.8853 2.22849 18.4796 2.04456 16 2.00869"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M2 8H5M22 8H9"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
     />
   </Svg>
 );

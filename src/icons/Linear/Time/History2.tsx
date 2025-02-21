@@ -2,34 +2,28 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgHistory2 = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2"
+      stroke="black"
       strokeWidth={1.5}
-      d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M12 9V13H16"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M12 9v4h4"
     />
     <Circle
       cx={12}
       cy={12}
       r={10}
-      stroke="#000"
-      strokeDasharray="0.5 3.5"
-      strokeLinecap="round"
+      stroke="black"
       strokeWidth={1.5}
+      strokeLinecap="round"
+      strokeDasharray="0.5 3.5"
     />
   </Svg>
 );

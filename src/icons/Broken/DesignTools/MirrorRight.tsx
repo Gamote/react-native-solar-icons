@@ -2,27 +2,26 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgMirrorRight = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M12 21C16.2426 21 18.364 21 19.682 19.682C21 18.364 21 16.2426 21 12M12 3C16.2426 3 18.364 3 19.682 4.31802C20.4976 5.13363 20.8085 6.25685 20.927 8"
+      stroke="black"
       strokeWidth={1.5}
-      d="M12 21c4.243 0 6.364 0 7.682-1.318S21 16.242 21 12m-9-9c4.243 0 6.364 0 7.682 1.318.816.816 1.127 1.939 1.245 3.682"
+      strokeLinecap="round"
     />
     <Path
-      stroke="#000"
+      d="M13 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15L3 9C3 6.17157 3 4.75736 3.87868 3.87868C4.75736 3 6.17157 3 9 3L13 3"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
       strokeDasharray="2.5 3"
-      strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M13 21H9c-2.828 0-4.243 0-5.121-.879C3 19.243 3 17.828 3 15V9c0-2.828 0-4.243.879-5.121C4.757 3 6.172 3 9 3h4"
     />
-    <Path stroke="#000" strokeLinecap="round" strokeWidth={1.5} d="M12 22V2" />
+    <Path
+      d="M12 22L12 2"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
   </Svg>
 );
 export default SvgMirrorRight;

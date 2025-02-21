@@ -2,31 +2,26 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgListCrossMinimalistic = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M3 6L13.5 6M20 6L17.75 6"
+      stroke="black"
       strokeWidth={1.5}
-      d="M3 6h10.5M20 6h-2.25M11 16H3"
+      strokeLinecap="round"
     />
+    <Path d="M11 16H3" stroke="black" strokeWidth={1.5} strokeLinecap="round" />
     <Path
-      stroke="#000"
+      d="M15 16L20 11M20 16L15 11"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="m15 16 5-5m0 5-5-5"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M11 11L7 11M3 11H4.2"
+      stroke="black"
       strokeWidth={1.5}
-      d="M11 11H7m-4 0h1.2"
+      strokeLinecap="round"
     />
   </Svg>
 );

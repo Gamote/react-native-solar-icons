@@ -2,25 +2,24 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgPallete2 = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M7 3.34132C8.47087 2.48824 10.1786 2 12 2C17.5228 2 22 6.48884 22 12.0261C22 20.178 13.8385 14.4192 12.2619 16.9268C11.8674 17.5541 12.2938 18.3364 12.8168 18.8607C13.4703 19.5159 13.4703 20.5781 12.8168 21.2333C12.2938 21.7576 11.5816 22.0709 10.8468 21.9863C5.86713 21.413 2 17.1723 2 12.0261C2 10.1945 2.48985 8.47765 3.34537 7"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
-      strokeWidth={1.5}
-      d="M7 3.341A9.93 9.93 0 0 1 12 2c5.523 0 10 4.489 10 10.026 0 8.152-8.161 2.393-9.738 4.9-.395.628.032 1.41.555 1.935a1.68 1.68 0 0 1 0 2.372c-.523.525-1.235.838-1.97.753C5.867 21.413 2 17.172 2 12.026A10 10 0 0 1 3.345 7"
     />
-    <Circle cx={17.5} cy={11.5} r={1.5} stroke="#000" strokeWidth={1.5} />
-    <Circle cx={6.5} cy={11.5} r={1.5} stroke="#000" strokeWidth={1.5} />
+    <Circle cx={17.5} cy={11.5} r={1.5} stroke="black" strokeWidth={1.5} />
+    <Circle cx={6.5} cy={11.5} r={1.5} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
+      d="M11.085 7C11.085 7.82843 10.4134 8.5 9.58496 8.5C8.75653 8.5 8.08496 7.82843 8.08496 7C8.08496 6.17157 8.75653 5.5 9.58496 5.5C10.4134 5.5 11.085 6.17157 11.085 7Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M11.085 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM16 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+    />
+    <Path
+      d="M16 7C16 7.82843 15.3284 8.5 14.5 8.5C13.6716 8.5 13 7.82843 13 7C13 6.17157 13.6716 5.5 14.5 5.5C15.3284 5.5 16 6.17157 16 7Z"
+      stroke="black"
+      strokeWidth={1.5}
     />
   </Svg>
 );

@@ -2,41 +2,35 @@ import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgBlackHole2 = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <Circle cx={12} cy={12} r={2} stroke="#000" strokeWidth={1.5} />
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <Circle cx={12} cy={12} r={2} stroke="black" strokeWidth={1.5} />
     <Path
-      stroke="#000"
-      strokeDasharray="2 2"
-      strokeLinecap="round"
+      d="M10.1418 10.3628C13.6876 6.81707 21.9137 15.6105 16.5242 21"
+      stroke="black"
       strokeWidth={1.5}
-      d="M10.142 10.363C13.688 6.817 21.914 15.61 16.524 21"
+      strokeLinecap="round"
+      strokeDasharray="2 2"
     />
     <Path
-      stroke="#000"
-      strokeDasharray="2 2"
-      strokeLinecap="round"
+      d="M13.8582 13.6372C10.3124 17.1829 2.08634 8.38952 7.47584 3.00001"
+      stroke="black"
       strokeWidth={1.5}
-      d="M13.858 13.637C10.312 17.183 2.086 8.39 7.476 3"
+      strokeLinecap="round"
+      strokeDasharray="2 2"
     />
     <Path
-      stroke="#000"
-      strokeDasharray="2 2"
-      strokeLinecap="round"
+      d="M10.3627 13.8579C6.81701 10.3122 15.6104 2.08609 20.9999 7.4756"
+      stroke="black"
       strokeWidth={1.5}
-      d="M10.363 13.858C6.817 10.312 15.61 2.086 21 7.476"
+      strokeLinecap="round"
+      strokeDasharray="2 2"
     />
     <Path
-      stroke="#000"
-      strokeDasharray="2 2"
-      strokeLinecap="round"
+      d="M13.6373 10.1421C17.183 13.6878 8.38959 21.9139 3.00008 16.5244"
+      stroke="black"
       strokeWidth={1.5}
-      d="M13.637 10.142C17.183 13.688 8.39 21.914 3 16.524"
+      strokeLinecap="round"
+      strokeDasharray="2 2"
     />
   </Svg>
 );

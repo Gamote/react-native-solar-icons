@@ -2,44 +2,48 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgChecklist = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M2 5.5L3.21429 7L7.5 3"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M2 5.5 3.214 7 7.5 3"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M2 12.5 3.214 14 7.5 10"
       opacity={0.5}
-    />
-    <Path
-      stroke="#000"
+      d="M2 12.5L3.21429 14L7.5 10"
+      stroke="black"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M2 19.5 3.214 21 7.5 17"
     />
-    <Path stroke="#000" strokeLinecap="round" strokeWidth={1.5} d="M22 19H12" />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M2 19.5L3.21429 21L7.5 17"
+      stroke="black"
       strokeWidth={1.5}
-      d="M22 12H12"
-      opacity={0.5}
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
-    <Path stroke="#000" strokeLinecap="round" strokeWidth={1.5} d="M22 5H12" />
+    <Path
+      d="M22 19L12 19"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      opacity={0.5}
+      d="M22 12L12 12"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
+    <Path
+      d="M22 5L12 5"
+      stroke="black"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+    />
   </Svg>
 );
 export default SvgChecklist;

@@ -2,37 +2,31 @@ import * as React from "react";
 import Svg, { Path, Rect } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgTurntable = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
+      d="M2 12C2 7.28595 2 4.92893 3.17157 3.46447C4.34315 2 6.22876 2 10 2H14C17.7712 2 19.6569 2 20.8284 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.8284 20.5355C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.5355C2 19.0711 2 16.714 2 12Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M2 12c0-4.714 0-7.071 1.172-8.536S6.229 2 10 2h4c3.771 0 5.657 0 6.828 1.464C22 4.93 22 7.286 22 12s0 7.071-1.172 8.535S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.465C2 19.072 2 16.714 2 12Z"
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M15 17L15.8944 16.5528C16.572 16.214 17 15.5215 17 14.7639V10.5"
+      stroke="black"
       strokeWidth={1.5}
-      d="m15 17 .894-.447A2 2 0 0 0 17 14.763V10.5"
+      strokeLinecap="round"
     />
     <Rect
-      width={8}
-      height={8}
       x={6}
       y={8}
-      stroke="#000"
-      strokeWidth={1.5}
+      width={8}
+      height={8}
       rx={4}
+      stroke="black"
+      strokeWidth={1.5}
     />
     <Path
-      stroke="#000"
+      d="M15.5 9C15.5 8.17157 16.1716 7.5 17 7.5C17.8284 7.5 18.5 8.17157 18.5 9C18.5 9.82843 17.8284 10.5 17 10.5C16.1716 10.5 15.5 9.82843 15.5 9Z"
+      stroke="black"
       strokeWidth={1.5}
-      d="M15.5 9a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
     />
   </Svg>
 );

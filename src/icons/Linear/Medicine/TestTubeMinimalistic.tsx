@@ -2,18 +2,12 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgTestTubeMinimalistic = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M6.8008 11.7834L8.07502 11.9256C9.09772 12.0398 9.90506 12.8507 10.0187 13.8779C10.1062 14.6689 10.6104 15.3515 11.3387 15.665L13 16.3547M13 16.3547L20.2387 9.08398L14.8635 3.68504L4.11323 14.4829C2.62892 15.9738 2.62892 18.391 4.11323 19.8818C5.59754 21.3727 8.00407 21.3727 9.48838 19.8818L13 16.3547ZM21 9.84867L14.1815 3"
+      stroke="black"
       strokeWidth={1.5}
-      d="m6.8 11.783 1.275.143a2.205 2.205 0 0 1 1.944 1.952 2.21 2.21 0 0 0 1.32 1.787l1.661.69m0 0 7.239-7.271-5.376-5.399-10.75 10.798a3.83 3.83 0 0 0 0 5.399 3.79 3.79 0 0 0 5.375 0zm8-6.506L14.182 3"
+      strokeLinecap="round"
     />
   </Svg>
 );

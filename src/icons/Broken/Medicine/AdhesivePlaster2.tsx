@@ -2,46 +2,40 @@ import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgAdhesivePlaster2 = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M12.765 20.4155C14.8777 22.5282 18.3029 22.5282 20.4155 20.4155C22.5282 18.3029 22.5282 14.8777 20.4155 12.765M12.765 20.4155L20.4155 12.765M12.765 20.4155L8.17476 15.8252M3.58447 11.235C1.47184 9.12233 1.47184 5.69709 3.58447 3.58447C5.69709 1.47184 9.12233 1.47184 11.235 3.58447M3.58447 11.235L11.235 3.58447M3.58447 11.235L5 12.6505M20.4155 12.765L19 11.3495M11.235 3.58447L15.8252 8.17476"
+      stroke="black"
       strokeWidth={1.5}
-      d="M12.765 20.416a5.41 5.41 0 1 0 7.65-7.651m-7.65 7.65 7.65-7.65m-7.65 7.65-4.59-4.59m-4.59-4.59a5.41 5.41 0 0 1 7.65-7.65m-7.65 7.65 7.65-7.65m-7.65 7.65L5 12.65m15.416.115L19 11.35m-7.765-7.766 4.59 4.59"
+      strokeLinecap="round"
     />
     <Circle
-      cx={9.172}
+      cx={9.17154}
       cy={12}
       r={1}
-      fill="#000"
-      transform="rotate(-45 9.172 12)"
+      transform="rotate(-45 9.17154 12)"
+      fill="black"
     />
     <Circle
-      cx={12}
-      cy={14.828}
+      cx={11.9999}
+      cy={14.8284}
       r={1}
-      fill="#000"
-      transform="rotate(-45 12 14.828)"
+      transform="rotate(-45 11.9999 14.8284)"
+      fill="black"
     />
     <Circle
-      cx={12}
-      cy={9.172}
+      cx={11.9999}
+      cy={9.17163}
       r={1}
-      fill="#000"
-      transform="rotate(-45 12 9.172)"
+      transform="rotate(-45 11.9999 9.17163)"
+      fill="black"
     />
     <Circle
-      cx={14.829}
+      cx={14.8285}
       cy={12}
       r={1}
-      fill="#000"
-      transform="rotate(-45 14.829 12)"
+      transform="rotate(-45 14.8285 12)"
+      fill="black"
     />
   </Svg>
 );

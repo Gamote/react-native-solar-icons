@@ -2,35 +2,29 @@ import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgBicyclingRound = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
-    <Circle cx={14} cy={4} r={2} stroke="#000" strokeWidth={1.5} />
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <Circle cx={14} cy={4} r={2} stroke="black" strokeWidth={1.5} />
     <Circle
+      opacity={0.5}
       cx={6}
       cy={18}
       r={3}
-      stroke="#000"
+      stroke="black"
       strokeWidth={1.5}
-      opacity={0.5}
     />
     <Circle
+      opacity={0.5}
       cx={18}
       cy={18}
       r={3}
-      stroke="#000"
+      stroke="black"
       strokeWidth={1.5}
-      opacity={0.5}
     />
     <Path
-      stroke="#000"
-      strokeLinecap="round"
+      d="M18.4999 9.99997H14.5822C14.2052 9.99997 13.8393 9.87213 13.5444 9.63733L11.386 7.91916C10.1193 6.91084 8.25168 7.27102 7.45083 8.67806C6.67562 10.0401 7.25192 11.7736 8.68829 12.4004L11.779 13.749C12.7312 14.1646 13.1695 15.2708 12.7603 16.2258L11.9999 18"
+      stroke="black"
       strokeWidth={1.5}
-      d="M18.5 10h-3.918c-.377 0-.743-.128-1.038-.363L11.386 7.92A2.638 2.638 0 1 0 8.688 12.4l3.091 1.349a1.89 1.89 0 0 1 .981 2.477L12 18"
+      strokeLinecap="round"
     />
   </Svg>
 );

@@ -2,21 +2,15 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgAltArrowUp = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
     <Path
-      fill="#000"
-      d="m8.303 11.596 3.327-3.431a.5.5 0 0 1 .74 0l6.43 6.63c.401.414.158 1.205-.37 1.205h-5.723z"
+      d="M8.30273 11.5956L11.6296 8.16485C11.8428 7.94505 12.1573 7.94505 12.3704 8.16485L18.8001 14.7953C19.2013 15.2091 18.9581 16 18.4297 16H12.7071L8.30273 11.5956Z"
+      fill="black"
     />
     <Path
-      fill="#000"
-      d="M11.293 16H5.57c-.528 0-.771-.791-.37-1.205l2.406-2.482z"
       opacity={0.5}
+      d="M11.2929 15.9999H5.5703C5.04189 15.9999 4.79869 15.2089 5.1999 14.7952L7.60648 12.3135L11.2929 15.9999Z"
+      fill="black"
     />
   </Svg>
 );
