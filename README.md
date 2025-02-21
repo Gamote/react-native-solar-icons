@@ -29,6 +29,9 @@
    yarn add -D tsx @types/node
    ```
 
-
 ## Original
 1. Cloned everything from https://github.com/480-Design/Solar-Icon-Set/tree/main into `original/` folder.
+2. Sanitize the directory and file names.
+   - Created a script in `scripts/rename-icons.ts`
+   - Added a script in `package.json` to run the script: `"rename-icons": "tsx scripts/rename-icons.ts"`
+   - Ran the script: `yarn rename-icons`
