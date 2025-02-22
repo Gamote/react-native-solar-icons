@@ -1,8 +1,23 @@
 {
   "name": "react-native-solar-icons",
-  "version": "1.0.0",
-  "author": "Gamote <contact@gamote.ro>",
+  "version": "1.0.1",
+  "author": "Gamote",
+  "description": "Solar System icons for React Native and Expo",
+  "keywords": [
+      "react",
+      "react-native",
+      "solar",
+      "icons",
+      "svg",
+      "expo",
+      "solar system"
+  ],
   "license": "MIT",
+  "homepage": "https://gamote.github.io/react-native-solar-icons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gamote/react-native-solar-icons.git"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -11,8 +26,7 @@
   "scripts": {
     "rename-icons": "tsx scripts/rename-icons.ts",
     "generate-icons-index": "tsx scripts/generate-icons-index.ts",
-    "build": "tsc",
-    "testpack": "yarn pack --filename react-native-solar-icons-latest.tgz"
+    "build": "tsc"
   },
   "peerDependencies": {
     "react": "^18 || ^19",

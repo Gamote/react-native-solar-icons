@@ -2,31 +2,36 @@
 
 ## Installation
 
+Install the package via Yarn or npm:
+
 ```bash
 yarn add react-native-solar-icons
+# or
+npm install react-native-solar-icons
 ```
-This package depends on `react-native-svg` ([more info](https://github.com/480-Design/Solar-Icon-Set)) :
+This package depends on `react-native-svg`, install it if you haven't already:
 ```bash
 yarn add react-native-svg
 # or
 npx expo install react-native-svg
 ```
+> For more details, please refer to their [installation guide](https://github.com/480-Design/Solar-Icon-Set).
 
 ## Usage
 
-The most basic usage is by specifying the icon `name`:
+The simplest usage is by specifying the icon `name`:
 ```tsx
 import { SolarIcon } from 'react-native-solar-icons';
 
 export const App = () => <SolarIcon name="HandShake" />;
 ```
 
-You can also specify the `size` and `color`:
+You can also customize the icon by specifying the `size` and `color`:
 ```tsx
 export const App = () => <SolarIcon name="HandShake" size={32} color="red" />;
 ```
 
-The type can be specified as well:
+If you need to choose a different icon set, you can specify the `type`:
 ```tsx
 export const App = () => <SolarIcon name="HandShake" size={32} color="red" type="bold-duotone" />;
 ```
@@ -44,4 +49,6 @@ The `<SolarIcon>` component accepts the following properties:
 | `...rest`        | Any additional props defined in [`SvgProps`](https://github.com/react-native-svg/react-native-svg#props) | —               | Any extra properties will be forwarded to the underlying `react-native-svg` component. This allows for further customization as needed.                                    |
 
 
-✨ The source of the icons is the [Solar Design System](https://github.com/480-Design/Solar-Icon-Set).
+---
+
+✨ The icons are sourced from the [Solar Design System](https://github.com/480-Design/Solar-Icon-Set).
