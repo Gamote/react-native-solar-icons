@@ -1,6 +1,6 @@
 {
   "name": "react-native-solar-icons",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Gamote",
   "description": "Solar System icons for React Native and Expo",
   "keywords": [
@@ -26,7 +26,8 @@
   "scripts": {
     "rename-icons": "tsx scripts/rename-icons.ts",
     "generate-icons-index": "tsx scripts/generate-icons-index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "testpack": "yarn pack --filename react-native-solar-icons-latest.tgz"
   },
   "peerDependencies": {
     "react": "^18 || ^19",
