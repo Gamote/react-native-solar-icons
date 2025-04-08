@@ -94,12 +94,22 @@
 - Ran the test script: `yarn testpack`
 - Install the package in a test project: `yarn add file:/absolute/path/to/react-native-solar-icons-v1.0.0.tgz`
 
+## Publish
+- Do your changes in the `main` branch.
+- Commit the changes to the repository.
+- Run `yarn build` to build the project.
+- Update the version in `package.json` to the new version.
+- Run `yarn npm publish` to publish the project.
+- Commit the version change to the repository.
+
 ## Clean up
 
 The setup is done, there is no reason to keep the `original/` folder. We can remove it.
 In case we discover that we need to regenerate the icons, we can always clone the repository again.
 
 ## Known issues
+
+### Wrong autocomplete when the icon is not part of the type
 
 Wrong autocomplete when the icon is not part of the type.
 Example: The `HandShake` is part only o the `bold` and `linear` types. If we try to use it like so:
@@ -109,3 +119,9 @@ Example: The `HandShake` is part only o the `bold` and `linear` types. If we try
 it will throw a Typescript error.
 
 **The issue is** that if we type in `HandSh` it will autocomplete to `HandShake` even if it's not part of the type. This is a limitation of the current implementation. We could improve this by using a different approach to generate the index files.
+
+### Wrong fill vs stroke
+
+Some icons used `fill` instead of `stroke`. This broke how the icons look like.
+
+For now, we only noticed this for the `AltArrow*` icons. We manually fixed them by replacing `fill` with `stroke` in the generated icons. We should investigate this further and fix it in the SVGO plugin.
