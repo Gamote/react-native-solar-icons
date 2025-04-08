@@ -120,8 +120,8 @@ it will throw a Typescript error.
 
 **The issue is** that if we type in `HandSh` it will autocomplete to `HandShake` even if it's not part of the type. This is a limitation of the current implementation. We could improve this by using a different approach to generate the index files.
 
-### Wrong fill vs stroke
+### Outdated icons
 
-Some icons used `fill` instead of `stroke`. This broke how the icons look like.
+Some icons in the repository are outdated. The Figma [file]() is the source of truth.
 
-For now, we only noticed this for the `AltArrow*` icons. We manually fixed them by replacing `fill` with `stroke` in the generated icons. We should investigate this further and fix it in the SVGO plugin.
+For now, we only noticed this for the `AltArrowLeft`, `AltArrowRight`, `AltArrowUp` icons. We manually replaced them **only** in the `Linear` directory. We should investigate this further and find a way to automate this process and update all of them.
